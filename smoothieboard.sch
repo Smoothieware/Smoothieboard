@@ -16011,7 +16011,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </classes>
 <parts>
 <part name="FRAME2" library="microbuilder" deviceset="FRAME_A3" device=""/>
-<part name="IC1" library="microbuilder" deviceset="LPC1768" device=""/>
+<part name="IC1" library="microbuilder" deviceset="LPC1768" device="" value="LPC1769"/>
 <part name="Q2" library="microbuilder" deviceset="CRYSTAL" device="THIN" value="12MHz"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="12pF"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="12pF"/>

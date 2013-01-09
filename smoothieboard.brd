@@ -7669,7 +7669,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="microbuilder" package="LQFP100" value="" x="59.817" y="52.705" smashed="yes" rot="R45">
+<element name="IC1" library="microbuilder" package="LQFP100" value="LPC1769" x="59.817" y="52.705" smashed="yes" rot="R45">
 <attribute name="NAME" x="70.31055" y="52.361203125" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="73.287375" y="55.399071875" size="1.778" layer="27" ratio="10" rot="R135"/>
 </element>
