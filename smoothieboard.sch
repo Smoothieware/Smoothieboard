@@ -15761,72 +15761,6 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-pnp">
-<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT23-BEC">
-<description>&lt;b&gt;TO-236&lt;/b&gt; ITT Intermetall</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
-<smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PNP">
-<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="94"/>
-<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="94"/>
-<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
-<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BC857*" prefix="Q">
-<description>&lt;b&gt;PNP Transistror&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PNP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="SOT23-BEC">
-<connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
-</connects>
-<technologies>
-<technology name="A"/>
-<technology name="ALT1"/>
-<technology name="B"/>
-<technology name="BALT1"/>
-<technology name="C"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="linear">
 <description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
@@ -16015,6 +15949,110 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="transistor-fet">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="SC74_INFINEON">
+<description>&lt;b&gt;Small Outline Transistor; 6 leads&lt;/b&gt; Reflow soldering&lt;p&gt;
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<wire x1="-1.45" y1="0.7" x2="-1.45" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="-0.7" x2="1.45" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.7" x2="1.45" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.7" x2="-1.45" y2="0.7" width="0.2032" layer="21"/>
+<circle x="-0.95" y="-0.35" radius="0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1.2" dx="0.5" dy="0.5" layer="1"/>
+<smd name="2" x="0" y="-1.2" dx="0.5" dy="0.5" layer="1"/>
+<smd name="3" x="0.95" y="-1.2" dx="0.5" dy="0.5" layer="1"/>
+<smd name="4" x="0.95" y="1.2" dx="0.5" dy="0.5" layer="1"/>
+<smd name="5" x="0" y="1.2" dx="0.5" dy="0.5" layer="1"/>
+<smd name="6" x="-0.95" y="1.2" dx="0.5" dy="0.5" layer="1"/>
+<text x="-1.2" y="1.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.2" y="-2.9" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.125" y1="-1.3" x2="-0.775" y2="-0.775" layer="51"/>
+<rectangle x1="-0.175" y1="-1.3" x2="0.175" y2="-0.775" layer="51"/>
+<rectangle x1="0.775" y1="-1.3" x2="1.125" y2="-0.775" layer="51"/>
+<rectangle x1="0.775" y1="0.775" x2="1.125" y2="1.3" layer="51"/>
+<rectangle x1="-0.175" y1="0.775" x2="0.175" y2="1.3" layer="51"/>
+<rectangle x1="-1.125" y1="0.775" x2="-0.775" y2="1.3" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P-MOSFET">
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="4.572" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="-1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="4.318" y="-0.254"/>
+<vertex x="3.302" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="0"/>
+<vertex x="1.524" y="0.762"/>
+<vertex x="1.524" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BSL207SP" prefix="Q">
+<description>&lt;b&gt;OptiMOS(R)-P Small-Signal-Transistor&lt;/b&gt; P-Channel, Enhancement mode, Super Logic Level (2.5 V rated)&lt;p&gt;
+Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</description>
+<gates>
+<gate name="G$1" symbol="P-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC74_INFINEON">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2 5 6"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -16353,8 +16391,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="R56" library="resistor" deviceset="R-US_" device="R0603" value="49.9R"/>
 <part name="R57" library="resistor" deviceset="R-US_" device="R0603" value="49.9R"/>
 <part name="JP20" library="SparkFun" deviceset="M03" device="PTH"/>
-<part name="Q1" library="transistor-pnp" deviceset="BC857*" device="SMD" technology="ALT1" value="NP"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="NP"/>
 <part name="JP13" library="SparkFun" deviceset="M04" device="1X04_NO_SILK"/>
 <part name="SUPPLY71" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY72" library="supply2" deviceset="GND" device=""/>
@@ -16382,6 +16418,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="X14" library="SparkFun" deviceset="USB" device="PTH"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER_2WAY" device="S"/>
 <part name="P+23" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="Q1" library="transistor-fet" deviceset="BSL207SP" device=""/>
+<part name="U$3" library="SparkFun" deviceset="5V" device=""/>
+<part name="U$4" library="SparkFun" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16513,8 +16552,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <instance part="P+29" gate="G$1" x="81.28" y="220.98"/>
 <instance part="SUPPLY36" gate="GND" x="73.66" y="193.04"/>
 <instance part="JP20" gate="G$1" x="378.46" y="88.9" rot="R180"/>
-<instance part="Q1" gate="G$1" x="45.72" y="172.72"/>
-<instance part="R4" gate="G$1" x="35.56" y="172.72" rot="R180"/>
 <instance part="JP13" gate="G$1" x="375.92" y="132.08" rot="R180"/>
 <instance part="SUPPLY74" gate="GND" x="281.94" y="119.38" rot="R270"/>
 <instance part="SUPPLY75" gate="GND" x="281.94" y="134.62" rot="R270"/>
@@ -16531,6 +16568,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <instance part="X14" gate="G$1" x="22.86" y="144.78" rot="MR0"/>
 <instance part="SJ1" gate="G$1" x="27.94" y="220.98" rot="R90"/>
 <instance part="P+23" gate="G$1" x="20.32" y="223.52"/>
+<instance part="Q1" gate="G$1" x="55.88" y="172.72"/>
+<instance part="U$4" gate="G$1" x="35.56" y="220.98"/>
 </instances>
 <busses>
 </busses>
@@ -16919,10 +16958,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="P+30" gate="G$1" pin="3.3V"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="58.42" y1="177.8" x2="58.42" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="180.34" x2="76.2" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="177.8" x2="48.26" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <wire x1="185.42" y1="48.26" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
@@ -17022,10 +17060,10 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="81.28" y1="213.36" x2="81.28" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="G$1" pin="1"/>
 <pinref part="P+23" gate="G$1" pin="3.3V"/>
-<wire x1="22.86" y1="220.98" x2="20.32" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="220.98" x2="20.32" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="220.98" x2="22.86" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AVCC" class="0">
@@ -17699,9 +17737,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <pinref part="IC1" gate="G$1" pin="P2[9]/USB_CONNECT/RXD2"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="172.72" x2="22.86" y2="172.72" width="0.1524" layer="91"/>
-<label x="22.86" y="172.72" size="1.778" layer="95"/>
+<wire x1="53.34" y1="175.26" x2="22.86" y2="175.26" width="0.1524" layer="91"/>
+<label x="22.86" y="175.26" size="1.778" layer="95"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="P2.13" class="0">
@@ -18040,24 +18078,17 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </net>
 <net name="5V" class="0">
 <segment>
+<pinref part="U$4" gate="G$1" pin="5V"/>
+<pinref part="SJ1" gate="G$1" pin="3"/>
 <wire x1="33.02" y1="220.98" x2="35.56" y2="220.98" width="0.1524" layer="91"/>
 <label x="35.56" y="220.98" size="1.778" layer="95"/>
-<pinref part="SJ1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="C"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="167.64" x2="58.42" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="167.64" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$59" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="B"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -18084,9 +18115,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <net name="N$23" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="3"/>
-<pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="205.74" x2="27.94" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="205.74" x2="27.94" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -19793,6 +19824,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <instance part="U$2" gate="A" x="86.36" y="86.36"/>
 <instance part="U$2" gate="B" x="162.56" y="86.36"/>
 <instance part="IC11" gate="G$1" x="170.18" y="142.24"/>
+<instance part="U$3" gate="G$1" x="43.18" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -20406,7 +20438,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <net name="5V" class="0">
 <segment>
 <wire x1="35.56" y1="48.26" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="38.1" x2="43.18" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="33.02" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <junction x="35.56" y="38.1"/>
@@ -20415,6 +20448,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <pinref part="C64" gate="G$1" pin="+"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="U$3" gate="G$1" pin="5V"/>
+<junction x="43.18" y="38.1"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
