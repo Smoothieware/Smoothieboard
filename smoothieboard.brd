@@ -6701,11 +6701,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="48.7045" y="76.3905" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="49.9745" y="73.406" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="Q6" library="transistor-power" package="TO220BV" value="IRF540" x="89.535" y="65.405" smashed="yes" rot="R270">
+<element name="Q6" library="transistor-power" package="TO220BV" value="AOT240L" x="89.535" y="65.405" smashed="yes" rot="R270">
 <attribute name="NAME" x="83.3185" y="61.1383" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="81.915" y="70.485" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="Q7" library="transistor-power" package="TO220BV" value="IRF540" x="92.1385" y="47.5615" smashed="yes" rot="R270">
+<element name="Q7" library="transistor-power" package="TO220BV" value="AOT240L" x="92.1385" y="47.5615" smashed="yes" rot="R270">
 <attribute name="NAME" x="93.2643" y="47.725" size="1.016" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="84.5185" y="52.6415" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
@@ -6739,11 +6739,11 @@ design rules under a new name.</description>
 <element name="LED10" library="led" package="CHIP-LED0805" value="" x="48.4505" y="78.1685" smashed="yes">
 <attribute name="VALUE" x="50.9905" y="76.8985" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="Q8" library="ipc-7351-transistor" package="SOT230P700X160-4N" value="BSP100" x="88.519" y="76.327" smashed="yes">
+<element name="Q8" library="ipc-7351-transistor" package="SOT230P700X160-4N" value="ZXMN4A06GTA" x="88.519" y="76.327" smashed="yes">
 <attribute name="NAME" x="94.286" y="75.689" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="87.0555" y="71.4895" size="1.27" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="Q9" library="ipc-7351-transistor" package="SOT230P700X160-4N" value="BSP100" x="88.646" y="86.36" smashed="yes">
+<element name="Q9" library="ipc-7351-transistor" package="SOT230P700X160-4N" value="ZXMN4A06GTA" x="88.646" y="86.36" smashed="yes">
 <attribute name="NAME" x="91.492" y="89.151" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="87.1825" y="81.5225" size="1.27" layer="27" font="vector" ratio="10"/>
 </element>

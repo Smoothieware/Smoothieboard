@@ -16313,8 +16313,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="D2" library="microbuilder" deviceset="DIODE" device="SMA" value="MBRA210LT3"/>
 <part name="LED9" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R77" library="resistor" deviceset="R-US_" device="R0603" value="1k"/>
-<part name="Q6" library="transistor-power" deviceset="IRF540" device=""/>
-<part name="Q7" library="transistor-power" deviceset="IRF540" device=""/>
+<part name="Q6" library="transistor-power" deviceset="IRF540" device="" value="AOT240L"/>
+<part name="Q7" library="transistor-power" deviceset="IRF540" device="" value="AOT240L"/>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="R73" library="resistor" deviceset="R-US_" device="R0603" value="22R"/>
 <part name="R75" library="resistor" deviceset="R-US_" device="R0603" value="22R"/>
@@ -16328,8 +16328,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
 <part name="R78" library="resistor" deviceset="R-US_" device="R0603" value="2.2K"/>
 <part name="LED10" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="Q8" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="BSP100"/>
-<part name="Q9" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="BSP100"/>
+<part name="Q8" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06GTA"/>
+<part name="Q9" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06GTA"/>
 <part name="R74" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R76" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R71" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
@@ -19664,9 +19664,6 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <text x="256.54" y="35.56" size="2.54" layer="97">GPIO Channel</text>
 <text x="322.58" y="35.56" size="2.54" layer="97">GPIO Channel</text>
 <text x="284.48" y="35.56" size="2.54" layer="97">PWM Channel</text>
-<text x="223.52" y="17.78" size="2.54" layer="97">IRLL024ZPBF </text>
-<text x="246.38" y="17.78" size="2.54" layer="97">: VDS:55V  @ Id: 5A</text>
-<text x="223.52" y="12.7" size="2.54" layer="97">BSP100 : VDS:30V  @ Id: 6A</text>
 <text x="321.31" y="14.986" size="2.54" layer="94">SmoothieBoard   ver 1.0</text>
 <text x="298.958" y="5.08" size="2.54" layer="94">http://smoothieware.org</text>
 <rectangle x1="297.18" y1="15.24" x2="307.34" y2="17.78" layer="210"/>
@@ -19745,8 +19742,14 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="SUPPLY35" gate="GND" x="48.26" y="88.9"/>
 <instance part="R78" gate="G$1" x="187.96" y="35.56" rot="R90"/>
 <instance part="LED10" gate="G$1" x="187.96" y="25.4"/>
-<instance part="Q8" gate="G$1" x="238.76" y="71.12"/>
-<instance part="Q9" gate="G$1" x="266.7" y="71.12"/>
+<instance part="Q8" gate="G$1" x="238.76" y="71.12" smashed="yes">
+<attribute name="VALUE" x="219.71" y="68.58" size="1.778" layer="96"/>
+<attribute name="NAME" x="229.87" y="73.66" size="1.778" layer="95"/>
+</instance>
+<instance part="Q9" gate="G$1" x="266.7" y="71.12" smashed="yes">
+<attribute name="VALUE" x="252.73" y="76.2" size="1.778" layer="96"/>
+<attribute name="NAME" x="257.81" y="73.66" size="1.778" layer="95"/>
+</instance>
 <instance part="R74" gate="G$1" x="243.84" y="53.34" rot="R90"/>
 <instance part="R76" gate="G$1" x="271.78" y="53.34" rot="R90"/>
 <instance part="R71" gate="G$1" x="73.66" y="78.74" rot="R90"/>
