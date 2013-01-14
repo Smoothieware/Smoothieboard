@@ -6966,6 +6966,30 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <rectangle x1="-0.15" y1="0.1" x2="0.15" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="-0.1" layer="51"/>
 </package>
+<package name="C1808">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+Source: AVX .. aphvc.pdf</description>
+<wire x1="-1.4732" y1="0.9502" x2="1.4732" y2="0.9502" width="0.1016" layer="51"/>
+<wire x1="-1.4478" y1="-0.9502" x2="1.4732" y2="-0.9502" width="0.1016" layer="51"/>
+<smd name="1" x="-1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
+<smd name="2" x="1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
+<text x="-2.233" y="1.827" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.233" y="-2.842" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.275" y1="-1.015" x2="-1.225" y2="1.015" layer="51"/>
+<rectangle x1="1.225" y1="-1.015" x2="2.275" y2="1.015" layer="51"/>
+</package>
+<package name="C3640">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+Source: AVX .. aphvc.pdf</description>
+<wire x1="-3.8322" y1="5.0496" x2="3.8322" y2="5.0496" width="0.1016" layer="51"/>
+<wire x1="-3.8322" y1="-5.0496" x2="3.8322" y2="-5.0496" width="0.1016" layer="51"/>
+<smd name="1" x="-4.267" y="0" dx="2.6" dy="10.7" layer="1"/>
+<smd name="2" x="4.267" y="0" dx="2.6" dy="10.7" layer="1"/>
+<text x="-4.647" y="6.465" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.647" y="-7.255" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-4.57" y1="-5.1" x2="-3.05" y2="5.1" layer="51"/>
+<rectangle x1="3.05" y1="-5.1" x2="4.5688" y2="5.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -7671,6 +7695,24 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </technologies>
 </device>
 <device name="C0201" package="C0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C1808" package="C1808">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C3640" package="C3640">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12378,7 +12420,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603-ARV" package="0603-ARV">
@@ -12393,7 +12440,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CAT16" package="CAT16">
@@ -12408,7 +12460,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CAY16" package="CAY16">
@@ -12423,7 +12480,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="YC124" package="YC124">
@@ -12438,7 +12500,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0402ARV341" package="4X0402ARV341">
@@ -12453,7 +12520,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EXB18V" package="EXB18V">
@@ -12468,7 +12540,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EXB28V" package="EXB28V">
@@ -12483,7 +12560,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EXB38V" package="EXB38V">
@@ -12498,7 +12580,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EXBN8V" package="EXBN8V">
@@ -12513,7 +12600,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EXBS8V" package="EXBS8V">
@@ -12528,7 +12620,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EXBV8V" package="EXBV8V">
@@ -12543,7 +12640,12 @@ Source: RS Component / Phycomp</description>
 <connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13938,6 +14040,84 @@ Source: http://www.kingbright.com/manager/upload/pdf/KA-3528ASYC(Ver1189474662.1
 <vertex x="0.825" y="-1.35"/>
 </polygon>
 </package>
+<package name="SML0805">
+<description>&lt;b&gt;SML0805-2CW-TR (0805 PROFILE)&lt;/b&gt; COOL WHITE&lt;p&gt;
+Source: http://www.ledtronics.com/ds/smd-0603/Dstr0093.pdf</description>
+<wire x1="-0.95" y1="-0.55" x2="0.95" y2="-0.55" width="0.1016" layer="51"/>
+<wire x1="0.95" y1="-0.55" x2="0.95" y2="0.55" width="0.1016" layer="51"/>
+<wire x1="0.95" y1="0.55" x2="-0.95" y2="0.55" width="0.1016" layer="51"/>
+<wire x1="-0.95" y1="0.55" x2="-0.95" y2="-0.55" width="0.1016" layer="51"/>
+<wire x1="-0.175" y1="-0.025" x2="0" y2="0.15" width="0.0634" layer="21"/>
+<wire x1="0" y1="0.15" x2="0.15" y2="0" width="0.0634" layer="21"/>
+<wire x1="0.15" y1="0" x2="-0.025" y2="-0.175" width="0.0634" layer="21"/>
+<wire x1="-0.025" y1="-0.175" x2="-0.175" y2="-0.025" width="0.0634" layer="21"/>
+<circle x="-0.275" y="0.4" radius="0.125" width="0" layer="21"/>
+<smd name="C" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="A" x="1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<text x="-1.5" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.5" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SML1206">
+<description>&lt;b&gt;SML10XXKH-TR (HIGH INTENSITY) LED&lt;/b&gt;&lt;p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;SML10R3KH-TR&lt;/td&gt;&lt;td&gt;ULTRA RED&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10E3KH-TR&lt;/td&gt;&lt;td&gt;SUPER REDSUPER BLUE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10O3KH-TR&lt;/td&gt;&lt;td&gt;SUPER ORANGE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10PY3KH-TR&lt;/td&gt;&lt;td&gt;PURE YELLOW&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10OY3KH-TR&lt;/td&gt;&lt;td&gt;ULTRA YELLOW&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10AG3KH-TR&lt;/td&gt;&lt;td&gt;AQUA GREEN&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10BG3KH-TR&lt;/td&gt;&lt;td&gt;BLUE GREEN&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10PB1KH-TR&lt;/td&gt;&lt;td&gt;SUPER BLUE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SML10CW1KH-TR&lt;/td&gt;&lt;td&gt;WHITE&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Source: http://www.ledtronics.com/ds/smd-1206/dstr0094.PDF</description>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="-0.5" width="0.2032" layer="51" curve="-180"/>
+<wire x1="1.5" y1="-0.5" x2="1.5" y2="0.5" width="0.2032" layer="51" curve="-180"/>
+<wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
+<circle x="-0.725" y="0.525" radius="0.125" width="0" layer="21"/>
+<smd name="C" x="-1.75" y="0" dx="1.5" dy="1.5" layer="1"/>
+<smd name="A" x="1.75" y="0" dx="1.5" dy="1.5" layer="1"/>
+<text x="-1.5" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.5" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6" y1="0.4" x2="-1.15" y2="0.8" layer="51"/>
+<rectangle x1="-1.6" y1="-0.8" x2="-1.15" y2="-0.4" layer="51"/>
+<rectangle x1="-1.175" y1="-0.6" x2="-1" y2="-0.275" layer="51"/>
+<rectangle x1="1.15" y1="-0.8" x2="1.6" y2="-0.4" layer="51" rot="R180"/>
+<rectangle x1="1.15" y1="0.4" x2="1.6" y2="0.8" layer="51" rot="R180"/>
+<rectangle x1="1" y1="0.275" x2="1.175" y2="0.6" layer="51" rot="R180"/>
+<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
+</package>
+<package name="SML0603">
+<description>&lt;b&gt;SML0603-XXX (HIGH INTENSITY) LED&lt;/b&gt;&lt;p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;AG3K&lt;/td&gt;&lt;td&gt;AQUA GREEN&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;B1K&lt;/td&gt;&lt;td&gt;SUPER BLUE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;R1K&lt;/td&gt;&lt;td&gt;SUPER RED&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;R3K&lt;/td&gt;&lt;td&gt;ULTRA RED&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;O3K&lt;/td&gt;&lt;td&gt;SUPER ORANGE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;O3KH&lt;/td&gt;&lt;td&gt;SOFT ORANGE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Y3KH&lt;/td&gt;&lt;td&gt;SUPER YELLOW&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Y3K&lt;/td&gt;&lt;td&gt;SUPER YELLOW&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2CW&lt;/td&gt;&lt;td&gt;WHITE&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
+<wire x1="-0.75" y1="0.35" x2="0.75" y2="0.35" width="0.1016" layer="51"/>
+<wire x1="0.75" y1="0.35" x2="0.75" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.75" y1="-0.35" x2="-0.75" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="-0.75" y1="-0.35" x2="-0.75" y2="0.35" width="0.1016" layer="51"/>
+<wire x1="-0.45" y1="0.3" x2="-0.45" y2="-0.3" width="0.1016" layer="51"/>
+<wire x1="0.45" y1="0.3" x2="0.45" y2="-0.3" width="0.1016" layer="51"/>
+<wire x1="-0.2" y1="0.35" x2="0.2" y2="0.35" width="0.1016" layer="21"/>
+<wire x1="-0.2" y1="-0.35" x2="0.2" y2="-0.35" width="0.1016" layer="21"/>
+<smd name="C" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.4" y1="0.175" x2="0" y2="0.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.175" x2="0" y2="0.4" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -14353,6 +14533,33 @@ Source: www.kingbright.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SML0805" package="SML0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SML1206" package="SML1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SML0603" package="SML0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -14632,7 +14839,12 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -15323,7 +15535,12 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -15340,7 +15557,12 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -16061,6 +16283,52 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </deviceset>
 </devicesets>
 </library>
+<library name="eric_sorensen">
+<packages>
+<package name="1715250000">
+<pad name="P$1" x="0" y="0" drill="1.5" shape="long" rot="R90"/>
+<pad name="P$2" x="5" y="0" drill="1.5" shape="long" rot="R90"/>
+<wire x1="-3.1" y1="-5.1" x2="8.1" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="-5.1" x2="8.1" y2="4" width="0.127" layer="21"/>
+<wire x1="8.1" y1="4" x2="8.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="5.1" x2="6.2" y2="5.1" width="0.127" layer="21"/>
+<wire x1="6.2" y1="5.1" x2="-1.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="5.1" x2="-3.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="5.1" x2="-3.1" y2="4" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="4" x2="-3.1" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="4" x2="-1.1" y2="4" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="4" x2="-1.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="6.2" y1="5.1" x2="6.2" y2="4" width="0.127" layer="21"/>
+<wire x1="6.2" y1="4" x2="8.1" y2="4" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="JUMPER">
+<pin name="P$1" x="-5.08" y="5.08" length="middle"/>
+<pin name="P$2" x="-5.08" y="0" length="middle"/>
+<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.8128" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.8128" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5MMCONN">
+<gates>
+<gate name="G$1" symbol="JUMPER" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="1715250000">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16343,9 +16611,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="X7" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
 <part name="X8" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
 <part name="X10" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
-<part name="X9" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
 <part name="X6" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
-<part name="X5" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
 <part name="U$1" library="Geos" deviceset="ETH1506S" device=""/>
 <part name="JP28" library="jumper" deviceset="JP1E" device=""/>
 <part name="JP11" library="jumper" deviceset="JP1E" device=""/>
@@ -16353,7 +16619,6 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="J8" library="con-amp" deviceset="MTA02-100" device=""/>
 <part name="J6" library="con-amp" deviceset="MTA02-100" device=""/>
 <part name="J9" library="con-amp" deviceset="MTA02-100" device=""/>
-<part name="J7" library="con-amp" deviceset="MTA02-100" device=""/>
 <part name="JP17" library="SparkFun" deviceset="M03" device="PTH"/>
 <part name="JP18" library="SparkFun" deviceset="M03" device="PTH"/>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
@@ -16420,6 +16685,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="Q1" library="transistor-fet" deviceset="BSL207SP" device=""/>
 <part name="U$3" library="SparkFun" deviceset="5V" device=""/>
 <part name="U$4" library="SparkFun" deviceset="5V" device=""/>
+<part name="U$5" library="eric_sorensen" deviceset="5MMCONN" device=""/>
+<part name="U$6" library="eric_sorensen" deviceset="5MMCONN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19652,9 +19919,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="383.54" y1="8.128" x2="383.54" y2="3.81" width="0.1524" layer="94"/>
 <wire x1="342.9" y1="3.81" x2="383.54" y2="3.81" width="0.1524" layer="97"/>
 <wire x1="383.54" y1="3.81" x2="383.54" y2="8.128" width="0.1524" layer="97"/>
-<text x="200.66" y="134.62" size="2.54" layer="97">JP12,   1-2: EXT FET- PS1</text>
 <text x="317.5" y="134.62" size="2.54" layer="97">JP13,14   1-2: EXT FET- PS2</text>
-<text x="213.36" y="129.54" size="2.54" layer="97">2-3: VBB </text>
 <text x="332.74" y="129.54" size="2.54" layer="97">2-3: VBB </text>
 <text x="210.82" y="78.74" size="2.54" layer="97">SMT FET PAIR</text>
 <text x="210.82" y="73.66" size="2.54" layer="97">Small Power</text>
@@ -19763,9 +20028,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="X7" gate="G$1" x="248.92" y="91.44"/>
 <instance part="X8" gate="G$1" x="276.86" y="91.44"/>
 <instance part="X10" gate="G$1" x="304.8" y="88.9" rot="MR180"/>
-<instance part="X9" gate="G$1" x="335.28" y="91.44"/>
 <instance part="X6" gate="G$1" x="223.52" y="127" rot="R90"/>
-<instance part="X5" gate="G$1" x="292.1" y="129.54" rot="R90"/>
 <instance part="U$1" gate="G$1" x="144.78" y="45.72" rot="R270"/>
 <instance part="JP28" gate="A" x="254" y="129.54"/>
 <instance part="JP11" gate="A" x="312.42" y="137.16"/>
@@ -19773,7 +20036,6 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="J8" gate="G$1" x="259.08" y="88.9" rot="MR90"/>
 <instance part="J6" gate="G$1" x="287.02" y="91.44" rot="R270"/>
 <instance part="J9" gate="G$1" x="314.96" y="88.9" rot="MR90"/>
-<instance part="J7" gate="G$1" x="345.44" y="91.44" rot="R270"/>
 <instance part="R65" gate="G$1" x="236.22" y="99.06" rot="R270"/>
 <instance part="LED5" gate="G$1" x="236.22" y="91.44"/>
 <instance part="R66" gate="G$1" x="266.7" y="99.06" rot="R270"/>
@@ -19826,6 +20088,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="U$2" gate="B" x="162.56" y="86.36"/>
 <instance part="IC11" gate="G$1" x="170.18" y="142.24"/>
 <instance part="U$3" gate="G$1" x="43.18" y="38.1"/>
+<instance part="U$5" gate="G$1" x="284.48" y="132.08" rot="R90"/>
+<instance part="U$6" gate="G$1" x="340.36" y="91.44" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -20138,7 +20402,9 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <junction x="294.64" y="119.38"/>
 <pinref part="SUPPLY24" gate="GND" pin="GND"/>
 <pinref part="C60" gate="G$1" pin="-"/>
-<pinref part="X5" gate="G$1" pin="2"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="284.48" y1="127" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="119.38" x2="287.02" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="27.94" x2="175.26" y2="17.78" width="0.1524" layer="91"/>
@@ -20534,19 +20800,16 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="N$94" class="0">
 <segment>
-<wire x1="330.2" y1="88.9" x2="332.74" y2="88.9" width="0.4064" layer="91"/>
+<wire x1="330.2" y1="86.36" x2="332.74" y2="86.36" width="0.4064" layer="91"/>
 <wire x1="330.2" y1="78.74" x2="330.2" y2="83.82" width="0.4064" layer="91"/>
-<wire x1="330.2" y1="83.82" x2="330.2" y2="88.9" width="0.4064" layer="91"/>
-<wire x1="342.9" y1="88.9" x2="340.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="88.9" x2="340.36" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="83.82" x2="330.2" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="83.82" x2="330.2" y2="86.36" width="0.4064" layer="91"/>
 <junction x="330.2" y="83.82"/>
 <pinref part="Q7" gate="G$1" pin="D"/>
-<pinref part="X9" gate="G$1" pin="2"/>
-<pinref part="J7" gate="G$1" pin="2"/>
 <pinref part="LED8" gate="G$1" pin="C"/>
 <wire x1="325.12" y1="86.36" x2="325.12" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="83.82" x2="330.2" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="332.74" y1="86.36" x2="335.28" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBB" class="0">
@@ -20597,8 +20860,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <segment>
 <wire x1="307.34" y1="119.38" x2="312.42" y2="119.38" width="0.3048" layer="91"/>
 <wire x1="332.74" y1="91.44" x2="330.2" y2="91.44" width="0.4064" layer="91"/>
-<wire x1="330.2" y1="106.68" x2="330.2" y2="96.52" width="0.4064" layer="91"/>
-<wire x1="330.2" y1="96.52" x2="330.2" y2="91.44" width="0.4064" layer="91"/>
+<wire x1="330.2" y1="106.68" x2="330.2" y2="91.44" width="0.4064" layer="91"/>
 <wire x1="312.42" y1="106.68" x2="325.12" y2="106.68" width="0.4064" layer="91"/>
 <wire x1="325.12" y1="106.68" x2="330.2" y2="106.68" width="0.4064" layer="91"/>
 <wire x1="312.42" y1="106.68" x2="312.42" y2="119.38" width="0.4064" layer="91"/>
@@ -20612,21 +20874,14 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="312.42" y1="119.38" x2="312.42" y2="124.46" width="0.4064" layer="91"/>
 <wire x1="309.88" y1="91.44" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="96.52" x2="299.72" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="91.44" x2="340.36" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="91.44" x2="340.36" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="96.52" x2="330.2" y2="96.52" width="0.1524" layer="91"/>
 <junction x="312.42" y="119.38"/>
 <junction x="312.42" y="106.68"/>
 <junction x="292.1" y="124.46"/>
 <junction x="312.42" y="124.46"/>
 <junction x="299.72" y="96.52"/>
-<junction x="330.2" y="96.52"/>
 <pinref part="C60" gate="G$1" pin="+"/>
-<pinref part="X9" gate="G$1" pin="1"/>
-<pinref part="X5" gate="G$1" pin="1"/>
 <pinref part="JP11" gate="A" pin="1"/>
 <pinref part="JP27" gate="A" pin="1"/>
-<pinref part="J7" gate="G$1" pin="1"/>
 <pinref part="X10" gate="G$1" pin="2"/>
 <wire x1="302.26" y1="91.44" x2="299.72" y2="91.44" width="0.4064" layer="91"/>
 <pinref part="J9" gate="G$1" pin="2"/>
@@ -20639,6 +20894,11 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <junction x="325.12" y="106.68"/>
 <junction x="299.72" y="106.68"/>
 <label x="312.42" y="109.22" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="279.4" y1="127" x2="279.4" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="124.46" x2="287.02" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P$2"/>
+<wire x1="332.74" y1="91.44" x2="335.28" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="160.02" y="142.24" size="1.778" layer="95" rot="MR0"/>

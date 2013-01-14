@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="4" display="no" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="4" display="no" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -5935,6 +5935,26 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 </package>
 </packages>
 </library>
+<library name="eric_sorensen">
+<packages>
+<package name="1715250000">
+<pad name="P$1" x="0" y="0" drill="1.5" shape="long" rot="R90"/>
+<pad name="P$2" x="5" y="0" drill="1.5" shape="long" rot="R90"/>
+<wire x1="-3.1" y1="-5.1" x2="8.1" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="-5.1" x2="8.1" y2="4" width="0.127" layer="21"/>
+<wire x1="8.1" y1="4" x2="8.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="5.1" x2="6.2" y2="5.1" width="0.127" layer="21"/>
+<wire x1="6.2" y1="5.1" x2="-1.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="5.1" x2="-3.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="5.1" x2="-3.1" y2="4" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="4" x2="-3.1" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="4" x2="-1.1" y2="4" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="4" x2="-1.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="6.2" y1="5.1" x2="6.2" y2="4" width="0.127" layer="21"/>
+<wire x1="6.2" y1="4" x2="8.1" y2="4" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6469,6 +6489,10 @@ design rules under a new name.</description>
 <element name="SL1" library="con-amp-quick" package="08P" value="" x="30.226" y="2.794" smashed="yes">
 <attribute name="NAME" x="19.9771" y="0.9525" size="1.016" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="20.32" y="-1.0414" size="1.27" layer="27" ratio="10"/>
+<attribute name="OC_NEWARK" value="unknown" x="30.226" y="2.794" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="30.226" y="2.794" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="30.226" y="2.794" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="30.226" y="2.794" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R30" library="resistor" package="R0603" value="33K" x="36.0045" y="60.579" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.3855" y="62.1665" size="1.016" layer="25" rot="R90"/>
@@ -6493,6 +6517,10 @@ design rules under a new name.</description>
 <element name="RN1" library="resistor-dil" package="0603-ARV" value="4.7K" x="38.862" y="13.462" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.989" y="18.4785" size="1.016" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="37.592" y="11.557" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="OC_NEWARK" value="unknown" x="38.862" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="38.862" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="38.862" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="38.862" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC4" library="Geos" package="TSSOP20" value="MCP44X1" x="41.9735" y="61.849" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.9928" y="66.3044" size="1.016" layer="25" ratio="10" rot="R180"/>
@@ -6525,18 +6553,34 @@ design rules under a new name.</description>
 <element name="X1" library="con-weidmueller-sl35" package="180G-4" value="" x="4.318" y="15.113" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.204" y="20.912" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="5.893" y="20.713" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="4.318" y="15.113" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="4.318" y="15.113" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="4.318" y="15.113" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="4.318" y="15.113" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X2" library="con-weidmueller-sl35" package="180G-4" value="" x="4.445" y="40.8305" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.5125" y="47.9855" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="6.02" y="46.4305" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="4.445" y="40.8305" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="4.445" y="40.8305" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="4.445" y="40.8305" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="4.445" y="40.8305" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X3" library="con-weidmueller-sl35" package="180G-4" value="" x="4.3815" y="66.3575" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.3945" y="72.0295" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="5.9565" y="71.9575" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="4.3815" y="66.3575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="4.3815" y="66.3575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="4.3815" y="66.3575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="4.3815" y="66.3575" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X4" library="con-weidmueller-sl35" package="180G-4" value="" x="4.064" y="91.567" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.068" y="99.103" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="5.639" y="97.167" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="4.064" y="91.567" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="4.064" y="91.567" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="4.064" y="91.567" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="4.064" y="91.567" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C27" library="rcl" package="C0603" value=".1uF" x="16.4465" y="10.8585" smashed="yes" rot="R225">
 <attribute name="NAME" x="17.783740625" y="10.658975" size="1.016" layer="25" rot="R225"/>
@@ -6779,34 +6823,50 @@ design rules under a new name.</description>
 <element name="X12" library="con-weidmueller-sl35" package="180G-2" value="" x="45.212" y="95.5675" smashed="yes">
 <attribute name="NAME" x="40.795" y="99.508" size="1.016" layer="25"/>
 <attribute name="VALUE" x="43.462" y="97.3175" size="1.27" layer="27"/>
+<attribute name="OC_NEWARK" value="unknown" x="45.212" y="95.5675" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="45.212" y="95.5675" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="45.212" y="95.5675" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="45.212" y="95.5675" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X11" library="con-weidmueller-sl35" package="180G-2" value="" x="56.896" y="95.5675" smashed="yes">
 <attribute name="NAME" x="50.0025" y="99.381" size="1.016" layer="25"/>
 <attribute name="VALUE" x="55.146" y="97.3175" size="1.27" layer="27"/>
+<attribute name="OC_NEWARK" value="unknown" x="56.896" y="95.5675" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="56.896" y="95.5675" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="56.896" y="95.5675" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="56.896" y="95.5675" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X7" library="con-weidmueller-sl35" package="180G-2" value="" x="101.473" y="85.344" smashed="yes" rot="R270">
 <attribute name="NAME" x="95.5955" y="88.3955" size="1.016" layer="25"/>
 <attribute name="VALUE" x="103.223" y="87.094" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="101.473" y="85.344" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="101.473" y="85.344" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="101.473" y="85.344" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="101.473" y="85.344" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X8" library="con-weidmueller-sl35" package="180G-2" value="" x="101.473" y="92.38" smashed="yes" rot="R270">
 <attribute name="NAME" x="96.961" y="95.2655" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="103.223" y="94.13" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="101.473" y="92.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="101.473" y="92.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="101.473" y="92.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="101.473" y="92.38" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X10" library="con-weidmueller-sl35" package="180G-2" value="" x="101.5238" y="78.3272" smashed="yes" rot="R270">
 <attribute name="NAME" x="101.1083" y="72.9517" size="1.016" layer="25"/>
 <attribute name="VALUE" x="103.2738" y="80.0772" size="1.27" layer="27" rot="R270"/>
-</element>
-<element name="X9" library="con-weidmueller-sl35" package="180G-2" value="" x="101.2825" y="50.1015" smashed="yes" rot="R270">
-<attribute name="NAME" x="97.254" y="54.0985" size="1.016" layer="25" rot="R180"/>
-<attribute name="VALUE" x="103.0325" y="51.8515" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="101.5238" y="78.3272" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="101.5238" y="78.3272" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="101.5238" y="78.3272" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="101.5238" y="78.3272" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X6" library="con-weidmueller-sl35" package="180G-2" value="" x="90.678" y="100.33" smashed="yes" rot="R180">
 <attribute name="NAME" x="97.3175" y="103.184" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="92.428" y="98.58" size="1.27" layer="27" rot="R180"/>
-</element>
-<element name="X5" library="con-weidmueller-sl35" package="180G-2" value="" x="99.787" y="65.405" smashed="yes" rot="R270">
-<attribute name="NAME" x="97.5945" y="70.9385" size="1.016" layer="25" rot="R180"/>
-<attribute name="VALUE" x="101.537" y="67.155" size="1.27" layer="27" rot="R270"/>
+<attribute name="OC_NEWARK" value="unknown" x="90.678" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="90.678" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="90.678" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="90.678" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$1" library="Geos" package="TO263AB" value="" x="64.389" y="104.013" smashed="yes" rot="R270">
 <attribute name="NAME" x="65.0875" y="102.8065" size="1.016" layer="25"/>
@@ -6835,10 +6895,6 @@ design rules under a new name.</description>
 <element name="J9" library="con-amp" package="10X02MTA" value="" x="97.536" y="78.225" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.0277" y="75.4432" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="95.3851" y="75.6789" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="J7" library="con-amp" package="10X02MTA" value="" x="97.3455" y="50.1015" smashed="yes" rot="R90">
-<attribute name="NAME" x="96.9137" y="47.0662" size="1.016" layer="25" rot="R180"/>
-<attribute name="VALUE" x="95.1946" y="47.5554" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="JP17" library="SparkFun" package="1X03" value="" x="28.702" y="56.3245" smashed="yes">
 <attribute name="NAME" x="35.0148" y="55.2973" size="1.016" layer="25" ratio="10"/>
@@ -6989,6 +7045,8 @@ design rules under a new name.</description>
 <element name="X14" library="SparkFun" package="USB-B-PTH" value="USBPTH" x="82.5" y="12" rot="R90"/>
 <element name="SJ1" library="SparkFun" package="SJ_3" value="" x="96.25" y="15.5" rot="R90"/>
 <element name="Q1" library="transistor-fet" package="SC74_INFINEON" value="BSL207SP" x="87.5" y="20.5" rot="R180"/>
+<element name="U$5" library="eric_sorensen" package="1715250000" value="5MMCONN" x="100" y="63" rot="R90"/>
+<element name="U$6" library="eric_sorensen" package="1715250000" value="5MMCONN" x="100" y="49" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -7139,7 +7197,6 @@ design rules under a new name.</description>
 <contactref element="C61" pad="C"/>
 <contactref element="X6" pad="2"/>
 <contactref element="C60" pad="-"/>
-<contactref element="X5" pad="2"/>
 <contactref element="LED10" pad="C"/>
 <contactref element="C63" pad="-"/>
 <contactref element="J10" pad="VIN0"/>
@@ -7910,6 +7967,7 @@ design rules under a new name.</description>
 <vertex x="38" y="99"/>
 <vertex x="38" y="108"/>
 </polygon>
+<contactref element="U$5" pad="P$2"/>
 </signal>
 <signal name="3.3V">
 <contactref element="IC1" pad="96"/>
@@ -13898,20 +13956,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$94">
 <contactref element="Q7" pad="D"/>
-<contactref element="X9" pad="2"/>
-<contactref element="J7" pad="2"/>
 <contactref element="LED8" pad="C"/>
 <polygon width="0.254" layer="1" spacing="0.254" isolate="0.254" thermals="no" rank="2">
-<vertex x="106" y="50"/>
-<vertex x="87" y="50"/>
+<vertex x="106" y="50.8"/>
+<vertex x="87" y="50.8"/>
 <vertex x="87" y="43"/>
 <vertex x="88" y="43"/>
 <vertex x="90.25" y="45.5"/>
 <vertex x="106" y="45.5"/>
 </polygon>
 <polygon width="0.254" layer="16" spacing="0.254" isolate="0.254" thermals="no" rank="6">
-<vertex x="106" y="49.75"/>
-<vertex x="87" y="49.75"/>
+<vertex x="106" y="50.75"/>
+<vertex x="87" y="50.75"/>
 <vertex x="87" y="46"/>
 <vertex x="106" y="46"/>
 </polygon>
@@ -13922,6 +13978,7 @@ design rules under a new name.</description>
 <vertex x="107.25" y="46"/>
 <vertex x="107.25" y="49.75"/>
 </polygon>
+<contactref element="U$6" pad="P$1"/>
 </signal>
 <signal name="N$74">
 <contactref element="R73" pad="1"/>
@@ -13939,11 +13996,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="MOSFET_DRIVE">
 <contactref element="C60" pad="+"/>
-<contactref element="X9" pad="1"/>
-<contactref element="X5" pad="1"/>
 <contactref element="JP11" pad="1"/>
 <contactref element="JP27" pad="1"/>
-<contactref element="J7" pad="1"/>
 <contactref element="X10" pad="2"/>
 <contactref element="J9" pad="2"/>
 <contactref element="R67" pad="1"/>
@@ -13963,13 +14017,13 @@ design rules under a new name.</description>
 <vertex x="94" y="57"/>
 <vertex x="93.25" y="56.25"/>
 <vertex x="86" y="56.25"/>
-<vertex x="86" y="50.25"/>
-<vertex x="106" y="50.25"/>
+<vertex x="86" y="51.25"/>
+<vertex x="106" y="51.25"/>
 </polygon>
 <polygon width="0.254" layer="1" spacing="0.254" isolate="0.254" thermals="no" rank="2">
 <vertex x="106" y="79"/>
-<vertex x="106" y="50.5"/>
-<vertex x="89.5" y="50.5"/>
+<vertex x="106" y="51.5"/>
+<vertex x="88.5" y="51.5"/>
 <vertex x="87" y="53"/>
 <vertex x="86" y="53"/>
 <vertex x="86" y="59"/>
@@ -14005,6 +14059,8 @@ design rules under a new name.</description>
 <vertex x="82.1" y="54.6"/>
 <vertex x="86" y="54.6"/>
 </polygon>
+<contactref element="U$5" pad="P$1"/>
+<contactref element="U$6" pad="P$2"/>
 </signal>
 <signal name="N$16">
 <contactref element="R78" pad="1"/>
@@ -14495,30 +14551,30 @@ design rules under a new name.</description>
 <errors>
 <approved hash="2,20,6325221ffb8d0889"/>
 <approved hash="4,1,963b8c5bdb02b904"/>
-<approved hash="19,1,0cbe22863a9a14a2"/>
-<approved hash="19,1,d4ecab94d480abf8"/>
-<approved hash="19,1,a7d4d8acd4a0abd8"/>
-<approved hash="19,1,cf3fedc7f5c4d73c"/>
-<approved hash="19,1,52edb8d5c7ce2df6"/>
-<approved hash="19,1,21d5cbedc7ee2dd6"/>
 <approved hash="19,1,b234cd4ccb7cb404"/>
 <approved hash="19,1,ec94d3ecd3b1ecc9"/>
 <approved hash="19,1,ae14d16cd2acadd4"/>
 <approved hash="19,1,9117f3eff3b19149"/>
 <approved hash="19,1,d397f16ff2acd054"/>
 <approved hash="19,1,cfb7ed4feb7cc984"/>
+<approved hash="19,1,e1bedec6db0fe477"/>
 <approved hash="19,1,e8bc57c457f1e889"/>
 <approved hash="19,1,d63ca944d470ab08"/>
-<approved hash="19,1,e1bedec6db0fe477"/>
 <approved hash="19,1,a8bea086ddbed586"/>
 <approved hash="19,1,963e5e065e3f9607"/>
 <approved hash="19,1,9f3cd704d2c19af9"/>
+<approved hash="19,1,0cbe22863a9a14a2"/>
+<approved hash="19,1,a7d4d8acd4a0abd8"/>
+<approved hash="19,1,d4ecab94d480abf8"/>
+<approved hash="19,1,cf3fedc7f5c4d73c"/>
+<approved hash="19,1,52edb8d5c7ce2df6"/>
+<approved hash="19,1,21d5cbedc7ee2dd6"/>
+<approved hash="19,1,e8d557ad55a1ead9"/>
 <approved hash="19,1,edb352cb52cfedb7"/>
 <approved hash="19,1,ae34d14cd74ca834"/>
-<approved hash="19,1,e8d557ad55a1ead9"/>
 <approved hash="19,1,d3b7f14ff74cd5b4"/>
-<approved hash="19,1,955677ae75a19759"/>
 <approved hash="19,1,903072c872cf9037"/>
+<approved hash="19,1,955677ae75a19759"/>
 <approved hash="19,1,22164c2e4a8e24b6"/>
 <approved hash="4,1,e2232811d8ffaf68"/>
 <approved hash="4,1,7c33e19b74840b26"/>
@@ -14526,37 +14582,32 @@ design rules under a new name.</description>
 <approved hash="19,1,b59ad2b0deed4e20"/>
 <approved hash="19,1,e28d3c16215da2a6"/>
 <approved hash="4,1,411909d8f8e99625"/>
-<approved hash="19,1,2a94e3385a90df99"/>
 <approved hash="19,1,493fe1e3242afc8b"/>
+<approved hash="19,1,2a94e3385a90df99"/>
 <approved hash="19,1,a19778fa779892c3"/>
-<approved hash="19,1,3fb1478945893db1"/>
 <approved hash="19,1,24095c3144713c49"/>
-<approved hash="19,1,06c97ef147313f09"/>
 <approved hash="19,1,33e14bd945993da1"/>
+<approved hash="19,1,06c97ef147313f09"/>
+<approved hash="19,1,3fb1478945893db1"/>
 <approved hash="19,1,3ac942f146313e09"/>
+<approved hash="19,1,92c66afe6e3b9603"/>
+<approved hash="19,1,9bee63d66d9395ab"/>
+<approved hash="19,1,8c06743e6c7b9443"/>
 <approved hash="19,1,aec656fe6f3b9703"/>
 <approved hash="19,1,97be6f866d8395bb"/>
-<approved hash="19,1,92c66afe6e3b9603"/>
-<approved hash="19,1,8c06743e6c7b9443"/>
-<approved hash="19,1,9bee63d66d9395ab"/>
 <approved hash="19,1,7fbd878585807db8"/>
 <approved hash="19,1,7ac582fd86387e00"/>
 <approved hash="19,1,46c5befd87387f00"/>
 <approved hash="19,1,64059c3d84787c40"/>
 <approved hash="19,1,73ed8bd585907da8"/>
-<approved hash="19,1,42c87af07e314609"/>
 <approved hash="19,1,5c0864307c714449"/>
-<approved hash="19,1,47b07f887d8945b1"/>
-<approved hash="19,1,4be073d87d9945a1"/>
 <approved hash="19,1,7ec846f07f314709"/>
+<approved hash="19,1,47b07f887d8945b1"/>
+<approved hash="19,1,42c87af07e314609"/>
+<approved hash="19,1,4be073d87d9945a1"/>
 <approved hash="4,1,332f27baedbc456a"/>
 <approved hash="4,1,8ad33afd4972451f"/>
 <approved hash="4,1,b6479f18a1f90da4"/>
-<approved hash="5,1,246a794a6b004286"/>
-<approved hash="5,1,96dbd64a68b1ee37"/>
-<approved hash="5,1,d5fad9ad192fe086"/>
-<approved hash="5,1,632b0fdff790609a"/>
-<approved hash="5,1,84c4d9e620a8f49a"/>
 <approved hash="4,2,e8f1d5894fed3703"/>
 <approved hash="4,2,6bcba655d3211b26"/>
 <approved hash="4,2,27cf8d07bac09cf2"/>
@@ -14567,8 +14618,8 @@ design rules under a new name.</description>
 <approved hash="4,15,6bcba655d3211b26"/>
 <approved hash="4,15,27cf8d07bac09cf2"/>
 <approved hash="4,15,411909d8f8e99625"/>
-<approved hash="4,15,8ad33afd4972451f"/>
 <approved hash="4,15,332f27baedbc456a"/>
+<approved hash="4,15,8ad33afd4972451f"/>
 <approved hash="5,15,ffb2c8ab252a25cf"/>
 <approved hash="5,15,3845756487570fe4"/>
 <approved hash="5,15,f8a53587bc98f4cb"/>
@@ -14577,8 +14628,8 @@ design rules under a new name.</description>
 <approved hash="4,16,7c33e19b74840b26"/>
 <approved hash="4,16,27cf8d07bac09cf2"/>
 <approved hash="4,16,411909d8f8e99625"/>
-<approved hash="4,16,8ad33afd4972451f"/>
 <approved hash="4,16,332f27baedbc456a"/>
+<approved hash="4,16,8ad33afd4972451f"/>
 <approved hash="4,16,b6479f18a1f90da4"/>
 </errors>
 </board>
