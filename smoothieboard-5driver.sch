@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="4" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="no"/>
@@ -16620,7 +16620,6 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="J6" library="con-amp" deviceset="MTA02-100" device=""/>
 <part name="J9" library="con-amp" deviceset="MTA02-100" device=""/>
 <part name="JP17" library="SparkFun" deviceset="M03" device="PTH"/>
-<part name="JP18" library="SparkFun" deviceset="M03" device="PTH"/>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="P+20" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="R65" library="resistor" deviceset="R-US_" device="R0603" value="5.6K"/>
@@ -16727,15 +16726,14 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <text x="342.9" y="177.8" size="2.54" layer="97">SD Card connector</text>
 <text x="12.7" y="187.96" size="2.54" layer="97">UART0</text>
 <text x="12.7" y="182.88" size="2.54" layer="97">(Also for ISP Loading)</text>
-<text x="298.45" y="5.08" size="2.54" layer="94">http://smoothieware.org</text>
-<rectangle x1="342.9" y1="5.08" x2="383.54" y2="7.62" layer="210"/>
+<text x="298.45" y="5.08" size="2.1844" layer="94">http://smoothieware.org</text>
 <rectangle x1="342.9" y1="4.318" x2="383.286" y2="8.128" layer="210"/>
 <text x="200.66" y="30.48" size="1.778" layer="91">Symbol reversed in Sparkfun</text>
-<text x="300.228" y="29.718" size="3.81" layer="94">Smoothieboard</text>
-<text x="355.6" y="33.02" size="2.54" layer="94">by: Arthur Wolf</text>
-<text x="339.598" y="28.956" size="2.54" layer="94">produced by: Trinity Labs</text>
-<text x="309.118" y="20.574" size="1.9304" layer="94">Licensed under GPL: http://www.gnu.org/licenses/gpl.html</text>
-<text x="302.514" y="23.876" size="1.9304" layer="94">Thanks for the support and contributions of the Reprap Community</text>
+<text x="299.72" y="29.845" size="3.81" layer="94">Smoothieboard</text>
+<text x="382.905" y="35.56" size="1.6764" layer="94" rot="R180">by: Arthur Wolf</text>
+<text x="382.905" y="33.655" size="1.6764" layer="94" rot="R180">produced by: Trinity Labs</text>
+<text x="299.72" y="20.32" size="1.27" layer="94">Licensed under GPL: http://www.gnu.org/licenses/gpl.html</text>
+<text x="299.72" y="22.86" size="1.27" layer="94">Thanks for the support and contributions of the Reprap Community</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -16840,7 +16838,6 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="JP24" gate="G$1" x="210.82" y="22.86" rot="R180"/>
 <instance part="JP23" gate="G$1" x="167.64" y="22.86" rot="MR180"/>
 <instance part="JP17" gate="G$1" x="358.14" y="109.22" rot="R180"/>
-<instance part="JP18" gate="G$1" x="378.46" y="109.22" rot="R180"/>
 <instance part="SUPPLY37" gate="GND" x="347.98" y="101.6"/>
 <instance part="P+20" gate="G$1" x="347.98" y="116.84"/>
 <instance part="U1" gate="G$1" x="365.76" y="205.74"/>
@@ -18017,16 +18014,11 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="JP13" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="P2.8" class="0">
+<net name="STP5" class="0">
 <segment>
 <wire x1="218.44" y1="198.12" x2="248.92" y2="198.12" width="0.1524" layer="91"/>
 <label x="238.76" y="198.12" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[8]/TD2/TXD2"/>
-</segment>
-<segment>
-<wire x1="370.84" y1="111.76" x2="363.22" y2="111.76" width="0.1524" layer="91"/>
-<label x="363.22" y="111.76" size="1.778" layer="95"/>
-<pinref part="JP18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="P2.9" class="0">
@@ -18041,28 +18033,18 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>
-<net name="P2.13" class="0">
+<net name="DIR5" class="0">
 <segment>
 <wire x1="218.44" y1="185.42" x2="248.92" y2="185.42" width="0.1524" layer="91"/>
 <label x="236.22" y="185.42" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[13]/EINT3/I2STX_SDA"/>
 </segment>
-<segment>
-<wire x1="363.22" y1="106.68" x2="370.84" y2="106.68" width="0.1524" layer="91"/>
-<label x="363.22" y="106.68" size="2.1844" layer="95"/>
-<pinref part="JP18" gate="G$1" pin="3"/>
-</segment>
 </net>
-<net name="P4.29" class="0">
+<net name="EN5" class="0">
 <segment>
 <wire x1="218.44" y1="165.1" x2="241.3" y2="165.1" width="0.1524" layer="91"/>
 <label x="231.14" y="165.1" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P4[29]/TX_MCLK/MAT2[1]/RXD3"/>
-</segment>
-<segment>
-<wire x1="370.84" y1="109.22" x2="363.22" y2="109.22" width="0.1524" layer="91"/>
-<label x="363.22" y="109.22" size="1.778" layer="95"/>
-<pinref part="JP18" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="X_MAX" class="0">
@@ -18439,8 +18421,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <text x="99.06" y="132.08" size="2.1844" layer="97">4th</text>
 <text x="99.06" y="129.54" size="2.1844" layer="97">16 th</text>
 <text x="320.04" y="243.84" size="1.778" layer="97">Thermistor Connection</text>
-<text x="298.196" y="5.334" size="2.54" layer="94">http://smoothieware.org</text>
-<rectangle x1="342.9" y1="5.08" x2="383.54" y2="7.62" layer="210"/>
+<text x="298.196" y="5.334" size="2.1844" layer="94">http://smoothieware.org</text>
+<rectangle x1="342.265" y1="4.445" x2="382.905" y2="8.255" layer="210"/>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -19948,10 +19930,6 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </sheet>
 <sheet>
 <plain>
-<wire x1="342.9" y1="3.81" x2="383.54" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="383.54" y1="8.128" x2="383.54" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="342.9" y1="3.81" x2="383.54" y2="3.81" width="0.1524" layer="97"/>
-<wire x1="383.54" y1="3.81" x2="383.54" y2="8.128" width="0.1524" layer="97"/>
 <text x="317.5" y="134.62" size="2.54" layer="97">JP13,14   1-2: EXT FET- PS2</text>
 <text x="332.74" y="129.54" size="2.54" layer="97">2-3: VBB </text>
 <text x="210.82" y="78.74" size="2.54" layer="97">SMT FET PAIR</text>
@@ -19962,10 +19940,9 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <text x="256.54" y="35.56" size="2.54" layer="97">GPIO Channel</text>
 <text x="322.58" y="35.56" size="2.54" layer="97">GPIO Channel</text>
 <text x="284.48" y="35.56" size="2.54" layer="97">PWM Channel</text>
-<text x="321.31" y="14.986" size="2.54" layer="94">SmoothieBoard   ver 1.0</text>
-<text x="298.958" y="5.08" size="2.54" layer="94">http://smoothieware.org</text>
-<rectangle x1="297.18" y1="15.24" x2="307.34" y2="17.78" layer="210"/>
-<rectangle x1="342.9" y1="2.54" x2="383.54" y2="7.62" layer="210"/>
+<text x="298.45" y="32.766" size="2.54" layer="94">SmoothieBoard   ver 1.0</text>
+<text x="298.958" y="5.08" size="2.1844" layer="94">http://smoothieware.org</text>
+<rectangle x1="342.265" y1="4.445" x2="382.905" y2="8.255" layer="210"/>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -21214,6 +21191,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </sheet>
 <sheet>
 <plain>
+<text x="298.958" y="5.08" size="2.1844" layer="94">http://smoothieware.org</text>
+<rectangle x1="342.265" y1="4.445" x2="382.905" y2="8.255" layer="210"/>
 </plain>
 <instances>
 <instance part="P+25" gate="G$1" x="109.22" y="187.96" rot="R270"/>
@@ -21622,7 +21601,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <label x="22.86" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="STEP5" class="0">
+<net name="STP5" class="0">
 <segment>
 <pinref part="IC12" gate="G$1" pin="STEP"/>
 <wire x1="35.56" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
