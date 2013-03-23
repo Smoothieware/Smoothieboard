@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="4" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="no"/>
@@ -16719,6 +16719,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="C73" library="rcl" deviceset="C-EU" device="C0603" value=".1uF"/>
 <part name="R81" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="C74" library="SparkFun" deviceset="CAP_POL" device="E" value="100uF"/>
+<part name="JP18" library="SparkFun" deviceset="M04" device="1X04_NO_SILK"/>
+<part name="SUPPLY81" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21234,6 +21236,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="C73" gate="G$1" x="109.22" y="81.28"/>
 <instance part="R81" gate="G$1" x="38.1" y="121.92" rot="R90"/>
 <instance part="C74" gate="G$1" x="101.6" y="81.28"/>
+<instance part="JP18" gate="G$1" x="106.68" y="243.84" rot="R180"/>
+<instance part="SUPPLY81" gate="GND" x="99.06" y="233.68"/>
 </instances>
 <busses>
 </busses>
@@ -21372,6 +21376,12 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="68.58" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C72" gate="G$1" pin="1"/>
 <pinref part="SUPPLY80" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP18" gate="G$1" pin="4"/>
+<pinref part="SUPPLY81" gate="GND" pin="GND"/>
+<wire x1="99.06" y1="236.22" x2="99.06" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="238.76" x2="101.6" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -21600,6 +21610,11 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="35.56" y1="93.98" x2="22.86" y2="93.98" width="0.1524" layer="91"/>
 <label x="22.86" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="JP18" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="246.38" x2="93.98" y2="246.38" width="0.1524" layer="91"/>
+<label x="93.98" y="246.38" size="1.27" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="STP5" class="0">
 <segment>
@@ -21607,12 +21622,22 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="35.56" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
 <label x="22.86" y="88.9" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="JP18" gate="G$1" pin="3"/>
+<wire x1="101.6" y1="241.3" x2="93.98" y2="241.3" width="0.1524" layer="91"/>
+<label x="93.98" y="241.3" size="1.27" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="DIR5" class="0">
 <segment>
 <pinref part="IC12" gate="G$1" pin="DIR"/>
 <wire x1="35.56" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="22.86" y="86.36" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP18" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="243.84" x2="93.98" y2="243.84" width="0.1524" layer="91"/>
+<label x="93.98" y="243.84" size="1.27" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PW5" class="0">
