@@ -20776,7 +20776,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="246.38" y1="88.9" x2="243.84" y2="88.9" width="0.4064" layer="91"/>
 </segment>
 </net>
-<net name="N$52" class="0">
+<net name="N$18" class="0">
 <segment>
 <wire x1="271.78" y1="78.74" x2="271.78" y2="83.82" width="0.4064" layer="91"/>
 <wire x1="271.78" y1="83.82" x2="271.78" y2="88.9" width="0.4064" layer="91"/>
@@ -20918,7 +20918,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="IC11" gate="G$1" pin="VI"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="SMALL_MOSFET_POWER" class="0">
 <segment>
 <wire x1="220.98" y1="121.92" x2="223.52" y2="121.92" width="0.4064" layer="91"/>
 <wire x1="223.52" y1="121.92" x2="254" y2="121.92" width="0.4064" layer="91"/>
