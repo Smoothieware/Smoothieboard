@@ -16596,8 +16596,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
 <part name="R78" library="resistor" deviceset="R-US_" device="R0603" value="2.2K"/>
 <part name="LED10" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="Q8" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06GTA"/>
-<part name="Q9" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06GTA"/>
+<part name="Q8" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06"/>
+<part name="Q9" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06"/>
 <part name="R74" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R76" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R71" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
@@ -16721,6 +16721,25 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="C74" library="SparkFun" deviceset="CAP_POL" device="E" value="100uF"/>
 <part name="JP18" library="SparkFun" deviceset="M04" device="1X04_NO_SILK"/>
 <part name="SUPPLY81" library="supply2" deviceset="GND" device=""/>
+<part name="R82" library="resistor" deviceset="R-US_" device="R0603" value="22R"/>
+<part name="SUPPLY82" library="supply2" deviceset="GND" device=""/>
+<part name="Q4" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-223" value="ZXMN4A06"/>
+<part name="R83" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="X9" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
+<part name="J7" library="con-amp" deviceset="MTA02-100" device=""/>
+<part name="R84" library="resistor" deviceset="R-US_" device="R0603" value="5.6K"/>
+<part name="LED11" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="Q5" library="transistor-power" deviceset="IRF540" device="" value="AOT240L"/>
+<part name="R85" library="resistor" deviceset="R-US_" device="R0603" value="5.6K"/>
+<part name="LED12" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="U$7" library="eric_sorensen" deviceset="5MMCONN" device=""/>
+<part name="R86" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="U$8" library="custom_esorensen" deviceset="TC4427" device=""/>
+<part name="C75" library="resistor" deviceset="C-EU" device="C0603" value=".1uF"/>
+<part name="SUPPLY83" library="supply2" deviceset="GND" device=""/>
+<part name="R87" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="U$9" library="eric_sorensen" deviceset="5MMCONN" device=""/>
+<part name="R88" library="resistor" deviceset="R-US_" device="R0603" value="22R"/>
 </parts>
 <sheets>
 <sheet>
@@ -17610,8 +17629,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="SD_CD" class="0">
 <segment>
-<wire x1="218.44" y1="190.5" x2="248.92" y2="190.5" width="0.1524" layer="91"/>
-<label x="233.68" y="190.5" size="1.778" layer="95"/>
+<wire x1="218.44" y1="190.5" x2="238.76" y2="190.5" width="0.1524" layer="91"/>
+<label x="238.76" y="190.5" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[11]/EINT1/I2STX_CLK"/>
 </segment>
 <segment>
@@ -17658,7 +17677,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="STP1" class="0">
 <segment>
-<wire x1="218.44" y1="218.44" x2="248.92" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="218.44" x2="238.76" y2="218.44" width="0.1524" layer="91"/>
 <label x="238.76" y="218.44" size="2.1844" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[0]/PWM1[1]/TXD1"/>
 </segment>
@@ -17670,7 +17689,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="STP2" class="0">
 <segment>
-<wire x1="218.44" y1="215.9" x2="248.92" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="215.9" x2="238.76" y2="215.9" width="0.1524" layer="91"/>
 <label x="238.76" y="215.9" size="2.1844" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[1]/PWM1[2]/RXD1"/>
 </segment>
@@ -17682,7 +17701,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="STP3" class="0">
 <segment>
-<wire x1="218.44" y1="213.36" x2="248.92" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="213.36" x2="238.76" y2="213.36" width="0.1524" layer="91"/>
 <label x="238.76" y="213.36" size="2.1844" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[2]/PWM1[3]/CTS1/TRACEDATA[3]"/>
 </segment>
@@ -17760,7 +17779,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="STP4" class="0">
 <segment>
-<wire x1="218.44" y1="210.82" x2="248.92" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="210.82" x2="238.76" y2="210.82" width="0.1524" layer="91"/>
 <label x="238.76" y="210.82" size="2.1844" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[3]/PWM1[4]/DCD1/TRACEDATA[2]"/>
 </segment>
@@ -17832,8 +17851,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="ISP_BOOT" class="0">
 <segment>
-<wire x1="218.44" y1="193.04" x2="248.92" y2="193.04" width="0.1524" layer="91"/>
-<label x="233.68" y="193.04" size="1.778" layer="95"/>
+<wire x1="218.44" y1="193.04" x2="238.76" y2="193.04" width="0.1524" layer="91"/>
+<label x="238.76" y="193.04" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[10]/EINT0/NMI"/>
 </segment>
 <segment>
@@ -17994,7 +18013,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="P2.6" class="0">
 <segment>
-<wire x1="218.44" y1="203.2" x2="248.92" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="203.2" x2="238.76" y2="203.2" width="0.1524" layer="91"/>
 <label x="238.76" y="203.2" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[6]/PCAP1[0]/RI1/TRACECLK"/>
 </segment>
@@ -18006,7 +18025,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="P2.7" class="0">
 <segment>
-<wire x1="218.44" y1="200.66" x2="248.92" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="200.66" x2="238.76" y2="200.66" width="0.1524" layer="91"/>
 <label x="238.76" y="200.66" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[7]/RD2/RTS1"/>
 </segment>
@@ -18018,14 +18037,14 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="STP5" class="0">
 <segment>
-<wire x1="218.44" y1="198.12" x2="248.92" y2="198.12" width="0.1524" layer="91"/>
-<label x="238.76" y="198.12" size="1.778" layer="95"/>
+<wire x1="218.44" y1="198.12" x2="238.76" y2="198.12" width="0.1524" layer="91"/>
+<label x="238.76" y="198.12" size="2.1844" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[8]/TD2/TXD2"/>
 </segment>
 </net>
 <net name="P2.9" class="0">
 <segment>
-<wire x1="218.44" y1="195.58" x2="248.92" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="195.58" x2="238.76" y2="195.58" width="0.1524" layer="91"/>
 <label x="238.76" y="195.58" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[9]/USB_CONNECT/RXD2"/>
 </segment>
@@ -18037,8 +18056,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="DIR5" class="0">
 <segment>
-<wire x1="218.44" y1="185.42" x2="248.92" y2="185.42" width="0.1524" layer="91"/>
-<label x="236.22" y="185.42" size="1.778" layer="95"/>
+<wire x1="218.44" y1="185.42" x2="238.76" y2="185.42" width="0.1524" layer="91"/>
+<label x="238.76" y="185.42" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[13]/EINT3/I2STX_SDA"/>
 </segment>
 </net>
@@ -18089,8 +18108,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="JP23" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="187.96" x2="248.92" y2="187.96" width="0.1524" layer="91"/>
-<label x="236.22" y="187.96" size="1.778" layer="95"/>
+<wire x1="218.44" y1="187.96" x2="238.76" y2="187.96" width="0.1524" layer="91"/>
+<label x="238.76" y="187.96" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[12]/EINT2/I2STX_WS"/>
 </segment>
 </net>
@@ -18208,7 +18227,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="PWM0" class="0">
 <segment>
-<wire x1="218.44" y1="208.28" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="208.28" x2="238.76" y2="208.28" width="0.1524" layer="91"/>
 <label x="238.76" y="208.28" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[4]/PWM1[5]/DSR1/TRACEDATA[1]"/>
 </segment>
@@ -18220,7 +18239,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 </net>
 <net name="PWM1" class="0">
 <segment>
-<wire x1="218.44" y1="205.74" x2="248.92" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="205.74" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
 <label x="238.76" y="205.74" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="P2[5]/PWM1[6]/DTR1/TRACEDATA[0]"/>
 </segment>
@@ -20962,6 +20981,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <junction x="243.84" y="106.68"/>
 <pinref part="X7" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="91.44" x2="243.84" y2="91.44" width="0.4064" layer="91"/>
+<label x="254" y="109.22" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PWM0" class="0">
@@ -21078,6 +21098,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <junction x="198.12" y="134.62"/>
 <pinref part="U$2" gate="RAILS" pin="P$1"/>
 <pinref part="IC11" gate="G$1" pin="VO"/>
+<label x="187.96" y="142.24" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="PWM1_FET" class="0">
@@ -21238,6 +21259,32 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="C74" gate="G$1" x="101.6" y="81.28"/>
 <instance part="JP18" gate="G$1" x="106.68" y="243.84" rot="R180"/>
 <instance part="SUPPLY81" gate="GND" x="99.06" y="233.68"/>
+<instance part="R82" gate="G$1" x="190.5" y="165.1" rot="R270"/>
+<instance part="SUPPLY82" gate="GND" x="210.82" y="165.1"/>
+<instance part="Q4" gate="G$1" x="195.58" y="182.88" smashed="yes">
+<attribute name="VALUE" x="204.47" y="182.88" size="1.778" layer="96"/>
+<attribute name="NAME" x="204.47" y="185.42" size="1.778" layer="95"/>
+</instance>
+<instance part="R83" gate="G$1" x="200.66" y="165.1" rot="R90"/>
+<instance part="X9" gate="G$1" x="205.74" y="203.2"/>
+<instance part="J7" gate="G$1" x="215.9" y="203.2" rot="R270"/>
+<instance part="R84" gate="G$1" x="195.58" y="210.82" rot="R270"/>
+<instance part="LED11" gate="G$1" x="195.58" y="203.2"/>
+<instance part="Q5" gate="G$1" x="271.78" y="185.42" smashed="yes">
+<attribute name="NAME" x="279.4" y="185.42" size="1.778" layer="95"/>
+<attribute name="VALUE" x="279.4" y="182.88" size="1.778" layer="96"/>
+</instance>
+<instance part="R85" gate="G$1" x="269.24" y="210.82" rot="R270"/>
+<instance part="LED12" gate="G$1" x="269.24" y="203.2"/>
+<instance part="U$7" gate="G$1" x="284.48" y="203.2" rot="MR180"/>
+<instance part="R86" gate="G$1" x="264.16" y="177.8"/>
+<instance part="U$8" gate="A" x="241.3" y="198.12"/>
+<instance part="U$8" gate="RAILS" x="170.18" y="187.96"/>
+<instance part="C75" gate="G$1" x="162.56" y="187.96"/>
+<instance part="SUPPLY83" gate="GND" x="167.64" y="167.64"/>
+<instance part="R87" gate="G$1" x="228.6" y="180.34" rot="R90"/>
+<instance part="U$9" gate="G$1" x="177.8" y="190.5" rot="R180"/>
+<instance part="R88" gate="G$1" x="259.08" y="190.5" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21382,6 +21429,45 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="SUPPLY81" gate="GND" pin="GND"/>
 <wire x1="99.06" y1="236.22" x2="99.06" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="238.76" x2="101.6" y2="238.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="172.72" x2="200.66" y2="172.72" width="0.4064" layer="91"/>
+<wire x1="200.66" y1="172.72" x2="210.82" y2="172.72" width="0.4064" layer="91"/>
+<wire x1="210.82" y1="172.72" x2="228.6" y2="172.72" width="0.4064" layer="91"/>
+<wire x1="200.66" y1="175.26" x2="200.66" y2="172.72" width="0.4064" layer="91"/>
+<wire x1="210.82" y1="167.64" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="170.18" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
+<junction x="200.66" y="172.72"/>
+<junction x="210.82" y="172.72"/>
+<pinref part="SUPPLY82" gate="GND" pin="GND"/>
+<pinref part="Q4" gate="G$1" pin="S"/>
+<pinref part="R83" gate="G$1" pin="2"/>
+<pinref part="R87" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="175.26" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="172.72" x2="185.42" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
+<wire x1="185.42" y1="172.72" x2="182.88" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="172.72" x2="182.88" y2="185.42" width="0.1524" layer="91"/>
+<junction x="185.42" y="172.72"/>
+<wire x1="228.6" y1="172.72" x2="274.32" y2="172.72" width="0.4064" layer="91"/>
+<wire x1="274.32" y1="172.72" x2="274.32" y2="177.8" width="0.4064" layer="91"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
+<pinref part="R86" gate="G$1" pin="2"/>
+<wire x1="274.32" y1="177.8" x2="274.32" y2="180.34" width="0.4064" layer="91"/>
+<wire x1="269.24" y1="177.8" x2="274.32" y2="177.8" width="0.1524" layer="91"/>
+<junction x="274.32" y="177.8"/>
+<junction x="228.6" y="172.72"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="RAILS" pin="P$2"/>
+<wire x1="170.18" y1="175.26" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C75" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="172.72" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="172.72" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="172.72" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="SUPPLY83" gate="GND" pin="GND"/>
+<wire x1="167.64" y1="170.18" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
+<junction x="167.64" y="172.72"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -21651,6 +21737,146 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="IC9" gate="G$1" pin="P0W"/>
 <wire x1="86.36" y1="165.1" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
 <label x="109.22" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<wire x1="200.66" y1="190.5" x2="200.66" y2="195.58" width="0.4064" layer="91"/>
+<wire x1="200.66" y1="195.58" x2="200.66" y2="200.66" width="0.4064" layer="91"/>
+<wire x1="210.82" y1="200.66" x2="210.82" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="195.58" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
+<junction x="200.66" y="195.58"/>
+<pinref part="Q4" gate="G$1" pin="D"/>
+<pinref part="X9" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="200.66" x2="200.66" y2="200.66" width="0.4064" layer="91"/>
+<pinref part="J7" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="200.66" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="LED11" gate="G$1" pin="C"/>
+<wire x1="195.58" y1="198.12" x2="195.58" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="195.58" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$97" class="0">
+<segment>
+<wire x1="190.5" y1="170.18" x2="190.5" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="R82" gate="G$1" pin="1"/>
+<pinref part="Q4" gate="G$1" pin="G"/>
+</segment>
+</net>
+<net name="P1_22" class="0">
+<segment>
+<wire x1="190.5" y1="160.02" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="157.48" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="160.02" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<junction x="190.5" y="157.48"/>
+<pinref part="R82" gate="G$1" pin="2"/>
+<pinref part="R83" gate="G$1" pin="1"/>
+<label x="193.04" y="152.4" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="N$100" class="0">
+<segment>
+<pinref part="R84" gate="G$1" pin="2"/>
+<pinref part="LED11" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$109" class="0">
+<segment>
+<wire x1="274.32" y1="198.12" x2="276.86" y2="198.12" width="0.4064" layer="91"/>
+<wire x1="274.32" y1="190.5" x2="274.32" y2="195.58" width="0.4064" layer="91"/>
+<wire x1="274.32" y1="195.58" x2="274.32" y2="198.12" width="0.4064" layer="91"/>
+<junction x="274.32" y="195.58"/>
+<pinref part="Q5" gate="G$1" pin="D"/>
+<pinref part="LED12" gate="G$1" pin="C"/>
+<wire x1="269.24" y1="198.12" x2="269.24" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="195.58" x2="274.32" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="P$1"/>
+<wire x1="276.86" y1="198.12" x2="279.4" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$110" class="0">
+<segment>
+<pinref part="R85" gate="G$1" pin="2"/>
+<pinref part="LED12" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="GPIO_FET1" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="269.24" y1="182.88" x2="259.08" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="R86" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="177.8" x2="259.08" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="R88" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="182.88" x2="259.08" y2="185.42" width="0.1524" layer="91"/>
+<junction x="259.08" y="182.88"/>
+</segment>
+</net>
+<net name="MOSFET_DRIVE1" class="0">
+<segment>
+<wire x1="200.66" y1="203.2" x2="200.66" y2="208.28" width="0.4064" layer="91"/>
+<wire x1="200.66" y1="208.28" x2="200.66" y2="218.44" width="0.4064" layer="91"/>
+<wire x1="185.42" y1="218.44" x2="195.58" y2="218.44" width="0.4064" layer="91"/>
+<wire x1="195.58" y1="218.44" x2="200.66" y2="218.44" width="0.4064" layer="91"/>
+<wire x1="210.82" y1="203.2" x2="210.82" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="208.28" x2="200.66" y2="208.28" width="0.1524" layer="91"/>
+<junction x="200.66" y="208.28"/>
+<pinref part="X9" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="203.2" x2="200.66" y2="203.2" width="0.4064" layer="91"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="203.2" x2="210.82" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="R84" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="215.9" x2="195.58" y2="218.44" width="0.1524" layer="91"/>
+<junction x="195.58" y="218.44"/>
+<label x="203.2" y="218.44" size="1.27" layer="95"/>
+<wire x1="276.86" y1="203.2" x2="274.32" y2="203.2" width="0.4064" layer="91"/>
+<wire x1="274.32" y1="218.44" x2="274.32" y2="203.2" width="0.4064" layer="91"/>
+<wire x1="200.66" y1="218.44" x2="269.24" y2="218.44" width="0.4064" layer="91"/>
+<wire x1="269.24" y1="218.44" x2="274.32" y2="218.44" width="0.4064" layer="91"/>
+<pinref part="R85" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="215.9" x2="269.24" y2="218.44" width="0.1524" layer="91"/>
+<junction x="269.24" y="218.44"/>
+<pinref part="U$7" gate="G$1" pin="P$2"/>
+<wire x1="276.86" y1="203.2" x2="279.4" y2="203.2" width="0.1524" layer="91"/>
+<junction x="200.66" y="218.44"/>
+<wire x1="185.42" y1="218.44" x2="185.42" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="P$2"/>
+<wire x1="185.42" y1="218.44" x2="182.88" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="218.44" x2="182.88" y2="190.5" width="0.1524" layer="91"/>
+<junction x="185.42" y="218.44"/>
+</segment>
+</net>
+<net name="12VREG" class="0">
+<segment>
+<pinref part="U$8" gate="RAILS" pin="P$1"/>
+<wire x1="170.18" y1="200.66" x2="170.18" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="C75" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="203.2" x2="162.56" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="203.2" x2="162.56" y2="208.28" width="0.1524" layer="91"/>
+<junction x="162.56" y="203.2"/>
+<label x="162.56" y="208.28" size="1.27" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="P1_23" class="0">
+<segment>
+<pinref part="U$8" gate="A" pin="P$1"/>
+<pinref part="R87" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="198.12" x2="228.6" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="198.12" x2="228.6" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="198.12" x2="223.52" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="198.12" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
+<junction x="228.6" y="198.12"/>
+<label x="220.98" y="152.4" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="N$113" class="0">
+<segment>
+<pinref part="U$8" gate="A" pin="P$2"/>
+<pinref part="R88" gate="G$1" pin="2"/>
+<wire x1="256.54" y1="198.12" x2="259.08" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="198.12" x2="259.08" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
