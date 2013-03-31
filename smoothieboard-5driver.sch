@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="no"/>
@@ -21283,7 +21283,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="C75" gate="G$1" x="162.56" y="187.96"/>
 <instance part="SUPPLY83" gate="GND" x="167.64" y="167.64"/>
 <instance part="R87" gate="G$1" x="228.6" y="180.34" rot="R90"/>
-<instance part="U$9" gate="G$1" x="177.8" y="190.5" rot="R180"/>
+<instance part="U$9" gate="G$1" x="180.34" y="185.42" rot="MR0"/>
 <instance part="R88" gate="G$1" x="259.08" y="190.5" rot="R90"/>
 </instances>
 <busses>
@@ -21444,11 +21444,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="R83" gate="G$1" pin="2"/>
 <pinref part="R87" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="175.26" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="172.72" x2="185.42" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
-<wire x1="185.42" y1="172.72" x2="182.88" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="172.72" x2="182.88" y2="185.42" width="0.1524" layer="91"/>
-<junction x="185.42" y="172.72"/>
+<wire x1="185.42" y1="172.72" x2="185.42" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="172.72" x2="274.32" y2="172.72" width="0.4064" layer="91"/>
 <wire x1="274.32" y1="172.72" x2="274.32" y2="177.8" width="0.4064" layer="91"/>
 <pinref part="Q5" gate="G$1" pin="S"/>
@@ -21457,6 +21453,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="269.24" y1="177.8" x2="274.32" y2="177.8" width="0.1524" layer="91"/>
 <junction x="274.32" y="177.8"/>
 <junction x="228.6" y="172.72"/>
+<pinref part="U$9" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="RAILS" pin="P$2"/>
@@ -21841,10 +21838,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="276.86" y1="203.2" x2="279.4" y2="203.2" width="0.1524" layer="91"/>
 <junction x="200.66" y="218.44"/>
 <wire x1="185.42" y1="218.44" x2="185.42" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="P$2"/>
-<wire x1="185.42" y1="218.44" x2="182.88" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="218.44" x2="182.88" y2="190.5" width="0.1524" layer="91"/>
-<junction x="185.42" y="218.44"/>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="12VREG" class="0">
