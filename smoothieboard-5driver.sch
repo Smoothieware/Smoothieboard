@@ -16612,7 +16612,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="X8" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
 <part name="X10" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
 <part name="X6" library="con-weidmueller-sl35" deviceset="180G-2" device=""/>
-<part name="U$1" library="Geos" deviceset="ETH1506S" device=""/>
+<part name="D3" library="Geos" deviceset="ETH1506S" device="" value="VS-25CTQ045S"/>
 <part name="JP28" library="jumper" deviceset="JP1E" device=""/>
 <part name="JP11" library="jumper" deviceset="JP1E" device=""/>
 <part name="JP27" library="jumper" deviceset="JP1E" device=""/>
@@ -16740,6 +16740,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <part name="R87" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="U$9" library="eric_sorensen" deviceset="5MMCONN" device=""/>
 <part name="R88" library="resistor" deviceset="R-US_" device="R0603" value="22R"/>
+<part name="D4" library="microbuilder" deviceset="DIODE" device="SMA" value="MBRA210LT3"/>
 </parts>
 <sheets>
 <sheet>
@@ -20060,7 +20061,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="X8" gate="G$1" x="276.86" y="91.44"/>
 <instance part="X10" gate="G$1" x="304.8" y="88.9" rot="MR180"/>
 <instance part="X6" gate="G$1" x="223.52" y="127" rot="R90"/>
-<instance part="U$1" gate="G$1" x="144.78" y="45.72" rot="R270"/>
+<instance part="D3" gate="G$1" x="144.78" y="45.72" rot="R270"/>
 <instance part="JP28" gate="A" x="254" y="129.54"/>
 <instance part="JP11" gate="A" x="312.42" y="137.16"/>
 <instance part="JP27" gate="A" x="312.42" y="137.16"/>
@@ -20121,6 +20122,7 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <instance part="U$3" gate="G$1" x="43.18" y="38.1"/>
 <instance part="U$5" gate="G$1" x="284.48" y="132.08" rot="R90"/>
 <instance part="U$6" gate="G$1" x="340.36" y="91.44" rot="MR180"/>
+<instance part="D4" gate="G$1" x="167.64" y="30.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20444,7 +20446,8 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="187.96" y1="17.78" x2="175.26" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="127" y1="38.1" x2="127" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="127" y1="48.26" x2="127" y2="38.1" width="0.1524" layer="91"/>
 <junction x="175.26" y="17.78"/>
 <junction x="127" y="38.1"/>
@@ -20453,6 +20456,9 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <pinref part="C63" gate="G$1" pin="-"/>
 <pinref part="J10" gate="G$1" pin="PWR"/>
 <pinref part="X11" gate="G$1" pin="2"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="167.64" y1="27.94" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<junction x="167.64" y="17.78"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="91.44" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
@@ -20848,14 +20854,18 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <wire x1="175.26" y1="43.18" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="43.18" x2="205.74" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="35.56" x2="175.26" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="43.18" x2="175.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="43.18" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="43.18" x2="175.26" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="40.64" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
 <junction x="175.26" y="43.18"/>
 <junction x="187.96" y="43.18"/>
 <label x="182.88" y="43.18" size="1.778" layer="95"/>
 <pinref part="R78" gate="G$1" pin="2"/>
 <pinref part="C63" gate="G$1" pin="+"/>
-<pinref part="U$1" gate="G$1" pin="K"/>
+<pinref part="D3" gate="G$1" pin="K"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="167.64" y1="33.02" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
+<junction x="167.64" y="43.18"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="127" x2="256.54" y2="121.92" width="0.4064" layer="91"/>
@@ -21035,7 +21045,10 @@ Source: http://www.infineon.com/upload/Document/BSL207SP_Rev2.01.pdf</descriptio
 <label x="127" y="43.18" size="1.778" layer="95"/>
 <pinref part="J10" gate="G$1" pin="GND"/>
 <pinref part="X11" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="N/C"/>
+<wire x1="142.24" y1="43.18" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<junction x="142.24" y="43.18"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
