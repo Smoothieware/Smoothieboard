@@ -17549,7 +17549,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="D4" library="microbuilder" deviceset="DIODE" device="SMA" value="B1100-13-F"/>
 <part name="Q10" library="transistor-fet" deviceset="SPD30P06P" device="TO252" value="SUD50P04-08-GE3"/>
 <part name="R89" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="D5" library="diode" deviceset="ZENER-DIODE" device="SMB" value="12v"/>
+<part name="D5" library="diode" deviceset="ZENER-DIODE" device="SMB" value="15v"/>
 </parts>
 <sheets>
 <sheet>
