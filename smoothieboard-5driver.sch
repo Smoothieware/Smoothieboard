@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18055,6 +18055,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="SUPPLY85" library="supply2" deviceset="GND" device=""/>
 <part name="C76" library="rcl" deviceset="C-EU" device="C0603" value=".1uF"/>
 <part name="C77" library="rcl" deviceset="C-EU" device="C0603" value=".33uF"/>
+<part name="R90" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R91" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -21437,6 +21439,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </instance>
 <instance part="R89" gate="G$1" x="160.02" y="22.86"/>
 <instance part="D5" gate="G$1" x="152.4" y="27.94" rot="R270"/>
+<instance part="R90" gate="G$1" x="292.1" y="66.04"/>
+<instance part="R91" gate="G$1" x="322.58" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -21712,8 +21716,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="271.78" y1="60.96" x2="281.94" y2="60.96" width="0.4064" layer="91"/>
 <wire x1="281.94" y1="60.96" x2="299.72" y2="60.96" width="0.4064" layer="91"/>
 <wire x1="299.72" y1="60.96" x2="330.2" y2="60.96" width="0.4064" layer="91"/>
-<wire x1="330.2" y1="60.96" x2="330.2" y2="68.58" width="0.4064" layer="91"/>
-<wire x1="299.72" y1="68.58" x2="299.72" y2="60.96" width="0.4064" layer="91"/>
+<wire x1="330.2" y1="60.96" x2="330.2" y2="66.04" width="0.4064" layer="91"/>
+<wire x1="330.2" y1="66.04" x2="330.2" y2="68.58" width="0.4064" layer="91"/>
+<wire x1="299.72" y1="68.58" x2="299.72" y2="66.04" width="0.4064" layer="91"/>
+<wire x1="299.72" y1="66.04" x2="299.72" y2="60.96" width="0.4064" layer="91"/>
 <wire x1="271.78" y1="63.5" x2="271.78" y2="60.96" width="0.4064" layer="91"/>
 <wire x1="281.94" y1="55.88" x2="281.94" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="58.42" x2="243.84" y2="60.96" width="0.1524" layer="91"/>
@@ -21729,6 +21735,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="Q9" gate="G$1" pin="S"/>
 <pinref part="R74" gate="G$1" pin="2"/>
 <pinref part="R76" gate="G$1" pin="2"/>
+<pinref part="R90" gate="G$1" pin="2"/>
+<wire x1="297.18" y1="66.04" x2="299.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="299.72" y="66.04"/>
+<pinref part="R91" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="66.04" x2="330.2" y2="66.04" width="0.1524" layer="91"/>
+<junction x="330.2" y="66.04"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="116.84" x2="226.06" y2="116.84" width="0.4064" layer="91"/>
@@ -22453,8 +22465,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="294.64" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="71.12" x2="287.02" y2="71.12" width="0.1524" layer="91"/>
 <label x="284.48" y="71.12" size="1.778" layer="95"/>
+<pinref part="R90" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="66.04" x2="287.02" y2="71.12" width="0.1524" layer="91"/>
+<junction x="287.02" y="71.12"/>
 </segment>
 </net>
 <net name="GPIO_FET" class="0">
@@ -22465,8 +22481,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="Q7" gate="G$1" pin="G"/>
-<wire x1="325.12" y1="71.12" x2="314.96" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="71.12" x2="317.5" y2="71.12" width="0.1524" layer="91"/>
 <label x="312.42" y="71.12" size="1.778" layer="95"/>
+<pinref part="R91" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="71.12" x2="314.96" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="66.04" x2="317.5" y2="71.12" width="0.1524" layer="91"/>
+<junction x="317.5" y="71.12"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
