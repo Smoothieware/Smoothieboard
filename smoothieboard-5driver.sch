@@ -18079,6 +18079,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
+<part name="JP8" library="SparkFun" deviceset="M04" device="1X04_NO_SILK"/>
+<part name="P+38" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="SUPPLY86" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22702,6 +22705,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="C77" gate="G$1" x="200.66" y="99.06"/>
 <instance part="X16" gate="G$1" x="294.64" y="203.2"/>
 <instance part="X17" gate="G$1" x="182.88" y="185.42" rot="R180"/>
+<instance part="JP8" gate="G$1" x="124.46" y="243.84" rot="MR180"/>
+<instance part="P+38" gate="G$1" x="132.08" y="248.92"/>
+<instance part="SUPPLY86" gate="GND" x="132.08" y="233.68"/>
 </instances>
 <busses>
 </busses>
@@ -22753,6 +22759,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="P+37" gate="G$1" pin="3.3V"/>
 <pinref part="R80" gate="G$1" pin="2"/>
 <pinref part="R81" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<pinref part="P+38" gate="G$1" pin="3.3V"/>
+<wire x1="129.54" y1="246.38" x2="132.08" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="246.38" x2="132.08" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -22899,6 +22911,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="218.44" y1="91.44" x2="236.22" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="91.44" x2="236.22" y2="93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="2"/>
+<pinref part="SUPPLY86" gate="GND" pin="GND"/>
+<wire x1="129.54" y1="243.84" x2="132.08" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="243.84" x2="132.08" y2="236.22" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$29" class="0">
 <segment>
@@ -22936,12 +22954,22 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <label x="17.78" y="193.04" size="1.778" layer="95" rot="R180"/>
 <pinref part="IC9" gate="G$1" pin="SCL"/>
 </segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="4"/>
+<wire x1="129.54" y1="238.76" x2="139.7" y2="238.76" width="0.1524" layer="91"/>
+<label x="139.7" y="238.76" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="POT_SDA" class="0">
 <segment>
 <wire x1="30.48" y1="187.96" x2="17.78" y2="187.96" width="0.1524" layer="91"/>
 <label x="17.78" y="187.96" size="1.778" layer="95" rot="R180"/>
 <pinref part="IC9" gate="G$1" pin="SDA"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="3"/>
+<wire x1="129.54" y1="241.3" x2="139.7" y2="241.3" width="0.1524" layer="91"/>
+<label x="139.7" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBB" class="0">
