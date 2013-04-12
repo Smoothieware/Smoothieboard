@@ -18082,6 +18082,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="JP8" library="SparkFun" deviceset="M04" device="1X04_NO_SILK"/>
 <part name="P+38" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="SUPPLY86" library="supply2" deviceset="GND" device=""/>
+<part name="JP13" library="jumper" deviceset="JP1E" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22708,6 +22709,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="JP8" gate="G$1" x="124.46" y="243.84" rot="MR180"/>
 <instance part="P+38" gate="G$1" x="132.08" y="248.92"/>
 <instance part="SUPPLY86" gate="GND" x="132.08" y="233.68"/>
+<instance part="JP13" gate="A" x="226.06" y="228.6"/>
 </instances>
 <busses>
 </busses>
@@ -23006,6 +23008,13 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <junction x="200.66" y="104.14"/>
 <wire x1="200.66" y1="104.14" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="213.36" y1="228.6" x2="213.36" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="JP13" gate="A" pin="1"/>
+<wire x1="213.36" y1="223.52" x2="226.06" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="223.52" x2="226.06" y2="226.06" width="0.1524" layer="91"/>
+<label x="213.36" y="228.6" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MS2" class="0">
 <segment>
@@ -23303,7 +23312,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <label x="203.2" y="218.44" size="1.27" layer="95"/>
 <wire x1="276.86" y1="203.2" x2="274.32" y2="203.2" width="0.4064" layer="91"/>
 <wire x1="274.32" y1="218.44" x2="274.32" y2="203.2" width="0.4064" layer="91"/>
-<wire x1="200.66" y1="218.44" x2="269.24" y2="218.44" width="0.4064" layer="91"/>
+<wire x1="200.66" y1="218.44" x2="228.6" y2="218.44" width="0.4064" layer="91"/>
+<wire x1="228.6" y1="218.44" x2="269.24" y2="218.44" width="0.4064" layer="91"/>
 <wire x1="269.24" y1="218.44" x2="274.32" y2="218.44" width="0.4064" layer="91"/>
 <pinref part="R85" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="215.9" x2="269.24" y2="218.44" width="0.1524" layer="91"/>
@@ -23319,6 +23329,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="190.5" y1="187.96" x2="185.42" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="X17" gate="G$1" pin="2"/>
 <junction x="185.42" y="187.96"/>
+<pinref part="JP13" gate="A" pin="2"/>
+<wire x1="228.6" y1="226.06" x2="228.6" y2="218.44" width="0.1524" layer="91"/>
+<junction x="228.6" y="218.44"/>
 </segment>
 </net>
 <net name="12VREG" class="0">

@@ -4350,7 +4350,7 @@
 <text x="66.9925" y="9.2075" size="2.54" layer="121" ratio="20">-</text>
 <text x="124.46" y="8.89" size="2.54" layer="121" ratio="20">+</text>
 <text x="114.935" y="8.89" size="2.54" layer="121" ratio="20">-</text>
-<text x="117.1575" y="29.5275" size="2.54" layer="121" ratio="20">+</text>
+<text x="116.84" y="30.7975" size="2.54" layer="121" ratio="20">+</text>
 <text x="116.5225" y="26.035" size="2.54" layer="121" ratio="20">+</text>
 <text x="119.38" y="36.195" size="2.54" layer="121" ratio="20" rot="R90">-</text>
 <text x="118.745" y="19.3675" size="2.54" layer="121" ratio="20" rot="R90">-</text>
@@ -4451,6 +4451,7 @@
 <text x="86.0425" y="50.4825" size="0.8128" layer="121" ratio="15" rot="R315">GND</text>
 <text x="86.0425" y="52.705" size="0.8128" layer="121" ratio="15" rot="R315">SDA</text>
 <text x="86.0425" y="55.5625" size="0.8128" layer="121" ratio="15" rot="R315">SCL</text>
+<wire x1="107.315" y1="29.5275" x2="115.57" y2="29.5275" width="0.8128" layer="121" style="shortdash"/>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -7578,6 +7579,10 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="126.0475" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="JP8" library="SparkFun" package="1X04_NO_SILK" value="" x="85.4075" y="48.895" rot="R90"/>
+<element name="JP13" library="jumper" package="JP1" value="" x="119.38" y="29.845" smashed="yes" rot="R270">
+<attribute name="NAME" x="116.7765" y="28.575" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="116.84" y="26.924" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -11415,6 +11420,12 @@ design rules under a new name.</description>
 <wire x1="97.79" y1="48.895" x2="95.5675" y2="48.895" width="0.8128" layer="1"/>
 <wire x1="98.7425" y1="33.995" x2="98.7425" y2="33.835" width="0.2032" layer="1"/>
 <wire x1="98.7425" y1="33.835" x2="98.445" y2="33.5375" width="0.2032" layer="1"/>
+<contactref element="JP13" pad="1"/>
+<wire x1="118.11" y1="29.845" x2="118.11" y2="37.1475" width="1.778" layer="16"/>
+<wire x1="118.11" y1="37.1475" x2="116.84" y2="38.4175" width="1.778" layer="16"/>
+<wire x1="116.84" y1="38.4175" x2="107.715" y2="38.4175" width="1.778" layer="16"/>
+<wire x1="107.715" y1="38.4175" x2="106.445" y2="37.1475" width="1.778" layer="16"/>
+<wire x1="106.445" y1="37.1475" x2="106.445" y2="35.5375" width="1.778" layer="16"/>
 </signal>
 <signal name="P0W">
 <contactref element="IC4" pad="12"/>
@@ -15510,9 +15521,7 @@ design rules under a new name.</description>
 <vertex x="112.395" y="16.8275"/>
 <vertex x="112.7125" y="16.51"/>
 <vertex x="132.08" y="16.51"/>
-<vertex x="132.08" y="34.925"/>
-<vertex x="119.0625" y="34.925"/>
-<vertex x="119.0625" y="31.75"/>
+<vertex x="132.08" y="29.21"/>
 </polygon>
 <wire x1="110.49" y1="23.1775" x2="111.125" y2="23.1775" width="0.6096" layer="1"/>
 <wire x1="111.125" y1="23.1775" x2="113.9825" y2="23.1775" width="0.6096" layer="1"/>
@@ -15636,6 +15645,7 @@ design rules under a new name.</description>
 <contactref element="X16" pad="1"/>
 <contactref element="J12" pad="1"/>
 <contactref element="X17" pad="2"/>
+<contactref element="JP13" pad="2"/>
 </signal>
 <signal name="N$113">
 <contactref element="U$8" pad="7"/>
