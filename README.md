@@ -8,7 +8,7 @@ The current BoM (Bill of Materials) can be found at https://docs.google.com/spre
 Licensed under CERN OHL v.1.2 or later http://ohwr.org/cernohl
 No warranty is provided for this documentation implied or otherwise.
 
-The policy regarding third party "clones" and "derivatives" of Smoothieboard is found at http://smoothieware.com/policy
+The policy regarding third party "clones" and "derivatives" of Smoothieboard is found at http://smoothieware.org/policy
 
 This documentation is hosted at http://github.com/Smoothieware/Smoothieboard
 Firmware is found at http://github.com/Smoothieware/Smoothieware
