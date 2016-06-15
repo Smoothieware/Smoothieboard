@@ -5,6 +5,8 @@ Smoothieboard is a free, opensource, high performance and modular G-code interpr
 
 The current BoM (Bill of Materials) can be found at https://docs.google.com/spreadsheet/ccc?key=0Api7_ZbfikkKdGRDblUwMDFWcm1CT2M2bENkQWpZZ0E&usp=drive_web#gid=0
 
+A separate list is maintained for the connectors at https://docs.google.com/spreadsheets/d/1bT7xw4z405cyhR7MyXegm4-C2oinxpVefuf3KV13v_A/edit#gid=0
+
 Licensed under CERN OHL v.1.2 or later http://ohwr.org/cernohl
 No warranty is provided for this documentation implied or otherwise.
 
