@@ -1,0 +1,7 @@
+Information about how to purchase an assembled Smoothieboard is available on the wiki at: 
+
+http://smoothieware.org/getting-smoothieboard
+
+Smoothieboard and Smoothieware are trademarks of The Smoothie Project.
+The hardware and software of The Smoothie Project are licensed under the CERN OHL v1.2 or later and GPL v3 or later licensing agreements respectively.
+Copyright 2011-2016 by Arthur Wolf and Mark Cooper

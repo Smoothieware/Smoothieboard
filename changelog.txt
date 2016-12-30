@@ -1,0 +1,58 @@
+Smoothieboard Change Log
+
+Smoothieboard v1.1 (2016/10)
+ - upgraded stepper drivers to A5984 drivers with 32x microstepping
+ - added a solder jumper (JP36) for MS3 on new A5984 drivers
+ - changed the current limiting resistors (R78,R65-R68,R84-R85) for VBB powered LEDs to 8.2K
+ - added an electrolytic capacitor (C84) to the 5V power system
+ - moved the electrolytic capicitor (C63) for the 5x mosfet set and increased its footprint size
+ - added flyback diodes (D7-D9) to small mosfet outputs to protect from inductive loads like small fans
+ - added Open Source Hardware logo with UID (FR000001)
+
+Smoothieboard v1.0b (2015/04)
+ - reworked silkscreen adding reference ids back in
+ - moved VBB jumper for small mosfet pair to increase room around C63
+ - corrected the polarity of the zener diode in the VBB reverse polarity protection circuit
+ - moved 5v reg backflow protection diode from the 5V side to the VBB side of the vreg
+ - broke out AVCC and AGND to header
+ - added solder jumper to TH4 passives
+
+Smoothieboard v1.0a (2015/01)
+ - update by Mark Cooper (Logxen)
+ - reworked silkscreen with more pin numbers and without reference ids
+ - added GND pin to the RST/ISP header
+ - modified sdcard SPI1 header to match the pinout of the SPI0 header
+
+Smoothieboard v1.0 (2014/09)
+ - update by Mark Cooper (Logxen) and Michael Moon (Triffid_Hunter)
+ - fixed missing connection between GND and AGND in KS layout
+ - improved silkscreen
+ - other small changes
+
+Smoothieboard KS (2013/10)
+ - expansion of the Beta design to a 5 driver layout by Michael Moon (Triffid_Hunter) and Mark Cooper (Logxen)
+ - added "mixed" mosfet pair of one large and one small fet
+ - improved VBB reverse polarity protection circuit
+ - added esd protection to endstop circuits
+ - added footprint for optional 5v regulator
+ - additional GND pins for various headers
+ - other small changes
+ - produced by cooperation between Uberclock, Robotseed, and the Smoothie community
+ - kickstarter page: https://www.kickstarter.com/projects/logxen/smoothieboard-the-future-of-cnc-motion-control
+
+Smoothieboard Beta (2013/01)
+ - designed by Arthur Wolf (arthur-_) and Eric Sorenson (ravix)
+ - the original Smoothieboard Beta was a 4 stepper driver design
+ - first produced by TrinityLabs and later produced by Ipsofactio which eventually rebranded as Robotseed
+ - wiki page: http://smoothieware.org/smoothieboard-beta
+
+Smoothieboard on a breadboard (circa 2011-current)
+ - core design by Arthur Wolf (arthur-_)
+ - original application circuits ported from RAMPS with modifications for use with 3.3V i/o
+ - many community members built their own Smoothieboards on breadboards before Smoothieboards were commercially available
+ - Smoothieboards on breadboards continue to be built today by people who are designing new derivative boards
+ - wiki page: http://smoothieware.org/smoothie-on-a-breadboard
+
+Smoothieboard and Smoothieware are trademarks of The Smoothie Project.
+The hardware and software of The Smoothie Project are licensed under the CERN OHL v1.2 or later and GPL v3 or later licensing agreements respectively.
+Copyright 2011-2016 by Arthur Wolf and Mark Cooper
